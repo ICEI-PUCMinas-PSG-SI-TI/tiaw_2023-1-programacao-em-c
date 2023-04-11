@@ -22,4 +22,4 @@ A ideia principal do projeto é condensar a informação sobre a linguagem e ofe
 https://trello.com/invite/b/w98RL85T/ATTI9c9da284e5819bf7bf589ea011d38c76970591D0/projeto-tiaw
 
 ## Instruções para uso
-O usuário deverá acessar primeiramente o index.html
+O usuário deverá acessar primeiramente o index.html dentro da página códigos
