@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    font-family: 'Inter';
+}
+#c-form-login{
+    height: 100%;
+    min-width: 500px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 0 0 0.3em #ccc;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+#c-form-login img{
+    width: 100%;
+    margin: 0px 25%;
+    margin-bottom: 50px;
+}
+.form-login-site p{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.form-login-site label{
+    font-weight: 700;
+    color: #252525;
+}
+.form-login-site label::after{
+    content: ' * ';
+    color: red;
+    font-size: 14px;
+}
+.form-login-site input{
+    width: 100%;
+    border-width: 0px 0px 1px 0px
+}
+.form-login-site .c-button-login{
+    text-align: center;
+}
+.form-login-site .c-button-login button{
+    width: 50%;
+    background-color: #252525;
+    box-shadow: 0 0 0.3em #ccc;
+    color: white;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 8px;
+}
+.c-register-text{
+    text-align: center;
+}
+
+/* Classes auxiliares */
+.divider-login{
+    width: 60%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 25px auto;
+}
