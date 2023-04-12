@@ -1,0 +1,7 @@
+:root{
+    --primaryColorGlobal: #58AF9C;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
