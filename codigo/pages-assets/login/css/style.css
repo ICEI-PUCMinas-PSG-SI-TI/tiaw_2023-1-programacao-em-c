@@ -3,8 +3,14 @@ body{
     height: 95vh;
     display: flex;
     align-items: center;
-    background-color: #ccc;
+    background-color: #19BC9D;
     font-family: 'Inter';
+}
+.logo-site-image{
+    background-image: url( "../../../project-assets/logo-csharp.png" );
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #c-form-login{
     height: 100%;
@@ -16,10 +22,27 @@ body{
     border-radius: 15px;
     padding: 15px;
 }
-#c-form-login img{
+.form-login-site .input-field-form{
+    margin: 20px auto;
+    width: 75%;
+    border-radius: 8px;
+    box-shadow: 0 0 0.3em #ccc;
+    display: flex;
+    flex-direction: row;
+}
+.form-login-site .input-field-form i{
+    background-color: #19BC9D;
+    padding: 12px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form-login-site .input-field-form input{
     width: 100%;
-    margin: 0px 25%;
-    margin-bottom: 50px;
+    margin-left: 10px;
+    border:none;
+}
+.form-login-site .input-field-form input:focus{
+    outline: none;
 }
 .form-login-site p{
     width: 75%;

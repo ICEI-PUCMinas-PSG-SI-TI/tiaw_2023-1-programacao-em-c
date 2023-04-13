@@ -30,6 +30,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url( "../../../project-assets/logo-csharp.png" );
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #painel-controller .list-nav-menus{
     height: 80%;
