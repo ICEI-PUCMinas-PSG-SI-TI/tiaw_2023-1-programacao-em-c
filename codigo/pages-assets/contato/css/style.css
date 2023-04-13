@@ -7,3 +7,79 @@ body{
 a{
     text-decoration: none;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+#c-contato{
+    height: 300px;
+    background-color: var( --primaryColorGlobal );
+    margin: 200px 0px;
+}
+#c-contato #c-info-contato{
+    width: 60%;
+    margin-left: 5%;
+}
+#c-contato #c-info-contato h1{
+    color: white;
+    font-size: 1.5em;
+}
+#c-contato #c-info-contato .c-contact-types{
+    margin: 15px 0px;
+}
+
+#c-contato #c-form-contato{
+    width: 30%;
+    height: 150%;
+    background-color: white;
+    box-shadow: 0 0 0.8em #ccc;
+    padding: 25px;
+    border: solid;
+    border-width: 1px;
+    border-color: #717171;
+    border-radius: 12px;
+}
+#c-contato #c-form-contato form{
+    height: 100%;
+}
+#c-form-contato h1{
+    margin: 0;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var( --primaryColorGlobal );
+}
+#c-form-contato .c-input-form{
+    box-shadow: 0 0 0.3em #ccc;
+    padding: 5px;
+    margin: 25px 0px;
+}
+#c-form-contato .c-input-form i{
+    margin-right: 10px;
+}
+#c-form-contato .c-input-form input{
+    border: none;
+    width: 100%;
+}
+#c-form-contato .c-button-contato{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#c-form-contato .c-button-contato button{
+    background-color: var( --primaryColorGlobal );
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0.3em #ccc;
+    cursor: pointer;
+}
+#c-form-contato .c-input-form input:focus{
+    outline: none;
+}
