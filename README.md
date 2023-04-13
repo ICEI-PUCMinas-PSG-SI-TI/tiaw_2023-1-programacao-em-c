@@ -23,5 +23,3 @@ https://trello.com/invite/b/w98RL85T/ATTI9c9da284e5819bf7bf589ea011d38c76970591D
 
 ## Instruções para uso
 O usuário deverá acessar primeiramente o index.html dentro da página códigos
-
-## Testando as branchs
