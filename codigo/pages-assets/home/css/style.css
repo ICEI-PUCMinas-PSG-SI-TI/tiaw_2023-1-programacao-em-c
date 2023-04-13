@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* Nav menu */
+#painel-controller{
+    border: solid;
+    border-width: 0px 1px 0px 0px;
+    width: 20%;
+    border-color: #ccc;
+}
+#painel-controller .logo-site-nav{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#painel-controller .list-nav-menus{
+    height: 80%;
+}
+#painel-controller .list-nav-menus{
+    list-style-type: none;
+    padding: 0px;
+}
+#painel-controller .list-nav-menus li{
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+}
+#painel-controller .list-nav-menus li a{
+    color: #252525;
+}
+#painel-controller .list-nav-menus li:hover{
+    background-color: var( --primaryColorGlobal );
+    font-weight: bold;
+}
+#painel-controller .list-nav-menus li:hover a{
+    color: white;
+}
+
+/* Conteúdo página */
+#c-content-page{
+    width: 60%;
+    overflow-y: auto;
+    padding: 20px;
+}
+#c-content-page::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+#c-content-page::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    display: none;
+}
+
+#c-content-page::-webkit-scrollbar-thumb {
+    display: none;
+}
+#c-content-page .img-header-content-page{
+    background-size: cover;
+    background-position: center;
+    margin-top:10px;
+    margin-bottom: 30px;
+    height: 200px;
+}
+#c-content-page h1{
+    font-size: 2em;
+    color: var( --primaryColorGlobal );
+}
+#c-content-page .code-contain-content{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+#c-content-page .code-contain-content:hover .c-copy-code-button span{
+    visibility: visible;
+}
+#c-content-page .code-contain-content .c-copy-code-button span{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    visibility: hidden;
+    cursor: pointer;
+}
+#c-content-page .code-contain-content .c-copy-code-button span i{
+    margin-right: 12px;
+}
+#c-content-page .code-contain-content .code-contain .property-name{
+    color: blue;
+}

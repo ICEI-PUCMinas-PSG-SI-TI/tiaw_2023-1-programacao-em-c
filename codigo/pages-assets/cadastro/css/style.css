@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Classes auxiliares */
+.divider-login{    
+    background-color: #ccc;
+    width: 40%;
+    margin: auto;
+    height: 2px;
+    margin-bottom: 40px;
+}
+.divider-login i{
+    position: absolute;
+    background-color: var( --primaryColorGlobal );
+    padding: 12px;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: -20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+body{
+    font-family: 'Inter';
+    padding: 0px;
+    margin: 0;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #252525;
+}
+main{
+    height: calc( 100% - 110px );
+    padding: 15px;
+}
+main #login-call{
+    background-color: var( --primaryColorGlobal );
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+#login-call #c-login{
+    text-align: center;
+    padding: 15px;
+    display: block;
+    color: white;
+}
+#login-call h2{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#login-call p{
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+#login-call a{
+    border:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 15px 80px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+#login-call a:hover{
+    background-color: white;
+    color: var( --primaryColorGlobal );
+}
+
+#create-account-side{    
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+#create-account-side #c-center-form-create-account{
+    text-align: center;
+    width: 100%;
+}
+#create-account-side h1{
+    text-align: center;
+    color: var( --primaryColorGlobal );
+    font-size: 2.5em;
+}
+#create-account-side #c-social-login-types{
+    justify-content: center;
+}
+#create-account-side #c-social-login-types object{
+    border: solid;
+    border-width: 1px;
+    margin: 0px 15px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#create-account-side form{
+    width: 50%;
+    margin: auto;
+}
+#create-account-side form .c-input-account-new{
+    background-color: #ECF0F1;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    margin: 20px 0px;
+}
+.c-input-account-new i{
+    font-size: 35px;
+    margin-right: 10px;
+    color: #a9aaaa;
+}
+.c-input-account-new input{
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    border: none;
+}
+.c-input-account-new input:focus{
+    outline: none;
+}
+.c-input-account-new input::placeholder{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#create-account-side form button{
+    width: 50%;
+    margin:30px auto;
+    justify-content: space-between;
+    background-color: var( --primaryColorGlobal );
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 15px;
+    box-shadow: 0 0 0.3em #ccc;
+    cursor: pointer;
+}
