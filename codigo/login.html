@@ -9,25 +9,26 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="pages-assets/login/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Login - Programação em C#</title>
 </head>
 <body>
     <main id="c-form-login">
-        <img alt="Logo Site" title="Logo Site">
+        <div class="logo-site-image"></div>
         <form name="form-login-site" class="form-login-site">
-            <p>
-                <label>
-                    Usuário/email:
-                </label><br><br>
-                <input placeholder="example@email.com" value="" id="input-user-email" type="text">
-            </p>
-            <p>
-                <label>
-                    Senha:
-                </label><br><br> 
-                <input placeholder="****" value="" type="password" id="input-senha">
-            </p>
+            <div class="input-field-form">
+                <i class="material-icons">
+                    person
+                </i>
+                <input placeholder="Usuário/Email" value="" type="text" id="user-email-user">
+            </div>
+            <div class="input-field-form">
+                <i class="material-icons">
+                    key
+                </i>
+                <input placeholder="Senha" value="" type="password" id="senha-user">
+            </div>
             <div class="c-button-login">
                 <button>
                     Logar
