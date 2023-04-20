@@ -15,7 +15,7 @@ a{
 main{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: calc( 100vh - 80px );
 }
 
 /* Nav menu */
@@ -25,17 +25,8 @@ main{
     width: 20%;
     border-color: #ccc;
 }
-#painel-controller .logo-site-nav{
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url( "../../../project-assets/logo-csharp.png" );
-    background-position: center;
-    background-repeat: no-repeat;
-}
 #painel-controller .list-nav-menus{
-    height: 80%;
+    height: 90%;
     list-style-type: none;
     padding: 0px;
     overflow-y: auto;

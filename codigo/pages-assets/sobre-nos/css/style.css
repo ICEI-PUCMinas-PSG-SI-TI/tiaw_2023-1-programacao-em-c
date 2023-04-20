@@ -4,3 +4,285 @@ body{
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+
+main{
+    padding: 20px;
+}
+.first-content{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+.first-content #content-first{
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.first-content #content-first h1{
+    font-weight: 600;
+    font-size: 2em;
+}
+.first-content #content-first h1 a{
+    color: var( --primaryColorGlobal );
+    font-weight: bold;
+}
+.first-content #image-first{
+    width: 50%;
+    background-image: url( "https://cdn.dribbble.com/users/2155131/screenshots/7497844/media/b45d46c88f9531594404d054834256aa.jpg?compress=1&resize=400x300&vertical=top" );
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+
+.second-content{
+    padding: 20px;
+}
+.second-content #c-box-faq{
+    background-color: var( --primaryColorGlobal );
+    width: 40%;
+    margin-right: 10%;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 2em #ccc;
+}
+.second-content #c-box-faq h2{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.second-content #c-box-faq p{
+    text-align: center;
+    color: white;
+}
+.second-content #c-box-faq .c-head-content{
+    justify-content: space-between;
+}
+
+#image-history-enterprise{
+    background-image: url( "../imgs/livro.png" );
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    width: 30%;
+    margin: 0px 5%;
+    border-top-left-radius: 50px;
+    background-repeat: no-repeat;
+}
+.second-content .c-history-enterprise{
+    width: 60%;
+}
+.second-content .c-history-enterprise h2{
+    color: var( --primaryColorGlobal );
+}
+
+.third-content{
+    margin: 60px 0px;
+}
+.third-content h2{
+    text-align: center;
+    color: var( --primaryColorGlobal );
+}
+.third-content .c-colabs-info{
+    justify-content: space-around;
+    margin:35px 0px;
+}
+.third-content .c-colabs-info .c-colab{
+    width: 20%;
+    text-align: center;
+}
+.c-colabs-info .c-colab i{
+    box-shadow: 0 0 0.3em #ccc;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 40px;
+    margin: 0px calc( ( 100% - 90px )/2 );
+}
+
+/* Timeline */
+.c-timeline{
+    margin: 50px 0px;
+}
+.c-timeline h2{
+    text-align: center;
+    color: var( --primaryColorGlobal );
+}
+.c-timeline ul {
+    --col-gap: 2rem;
+    --row-gap: 2rem;
+    --line-w: 0.25rem;
+    display: grid;
+    grid-template-columns: var(--line-w) 1fr;
+    grid-auto-columns: max-content;
+    column-gap: var(--col-gap);
+    list-style: none;
+    width: min(60rem, 90%);
+    margin-inline: auto;
+  }
+  
+  /* line */
+  .c-timeline ul::before {
+    content: "";
+    grid-column: 1;
+    grid-row: 1 / span 20;
+    background: rgb(225, 225, 225);
+    border-radius: calc(var(--line-w) / 2);
+  }
+  
+  /* columns*/
+  
+  /* row gaps */
+  .c-timeline ul li:not(:last-child) {
+    margin-bottom: var(--row-gap);
+  }
+  
+  /* card */
+  .c-timeline ul li {
+    grid-column: 2;
+    --inlineP: 1.5rem;
+    margin-inline: var(--inlineP);
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+  }
+  
+  /* date */
+  .c-timeline ul li .date {
+    --dateH: 3rem;
+    height: var(--dateH);
+    margin-inline: calc(var(--inlineP) * -1);
+  
+    text-align: center;
+    background-color: var(--accent-color);
+  
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+  
+    display: grid;
+    place-content: center;
+    position: relative;
+  
+    border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+  }
+  
+  /* date flap */
+  .c-timeline ul li .date::before {
+    content: "";
+    width: var(--inlineP);
+    aspect-ratio: 1;
+    background: var(--accent-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+    position: absolute;
+    top: 100%;
+  
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    right: 0;
+  }
+  
+  /* circle */
+  .c-timeline ul li .date::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: var(--bgColor);
+    border: 0.3rem solid var(--accent-color);
+    border-radius: 50%;
+    top: 50%;
+  
+    transform: translate(50%, -50%);
+    right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  
+  /* title descr */
+  .c-timeline ul li .title,
+  .c-timeline ul li .descr {
+    background: var(--bgColor);
+    position: relative;
+    padding-inline: 1.5rem;
+  }
+  .c-timeline ul li .title {
+    overflow: hidden;
+    padding-block-start: 1.5rem;
+    padding-block-end: 1rem;
+    font-weight: 500;
+  }
+  .c-timeline ul li .descr {
+    padding-block-end: 1.5rem;
+    font-weight: 300;
+  }
+  
+  /* shadows */
+  .c-timeline ul li .title::before,
+  .c-timeline ul li .descr::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 0.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    left: 50%;
+    border-radius: 50%;
+    filter: blur(4px);
+    transform: translate(-50%, 50%);
+  }
+  .c-timeline ul li .title::before {
+    bottom: calc(100% + 0.125rem);
+  }
+  
+  .c-timeline ul li .descr::before {
+    z-index: -1;
+    bottom: 0.25rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .c-timeline ul {
+      grid-template-columns: 1fr var(--line-w) 1fr;
+    }
+    .c-timeline ul::before {
+      grid-column: 2;
+    }
+    .c-timeline ul li:nth-child(odd) {
+      grid-column: 1;
+    }
+    .c-timeline ul li:nth-child(even) {
+      grid-column: 3;
+    }
+  
+    /* start second card */
+    .c-timeline ul li:nth-child(2) {
+      grid-row: 2/4;
+    }
+  
+    .c-timeline ul li:nth-child(odd) .date::before {
+      clip-path: polygon(0 0, 100% 0, 100% 100%);
+      left: 0;
+    }
+  
+    .c-timeline ul li:nth-child(odd) .date::after {
+      transform: translate(-50%, -50%);
+      left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+    }
+    .c-timeline ul li:nth-child(odd) .date {
+      border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+    }
+  }
+  
+  .credits {
+    margin-top: 1rem;
+    text-align: right;
+  }
+  .credits a {
+    color: var(--color);
+  }
