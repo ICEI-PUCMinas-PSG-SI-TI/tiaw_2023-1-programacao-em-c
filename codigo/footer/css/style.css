@@ -30,3 +30,12 @@ footer .copyright-footer{
     color: white;
     text-align: center;
 }
+#c-logo-footer{
+    background-image: url( '../../project-assets/logo-csharp.png' );
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}

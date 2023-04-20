@@ -7,6 +7,7 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="global-styles/style.css"><!-- Global styles -->
+    <link rel="stylesheet" href="header/assets/css/style.css"><!-- Header styles -->
     <link rel="stylesheet" href="pages-assets/home/css/style.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,9 +15,32 @@
     <title>Programação em C#</title>
 </head>
 <body>
+    <header>
+        <div id="c-maxwidth-header">
+            <div id="c-header-logo"></div>        
+            <nav>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="sobre-nos.html">
+                        Sobre nós
+                    </a>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                    <a href="cadastro.html">
+                        Cadastro
+                    </a>
+                    <a class="login-btn-nav-header" href="login.html">
+                        Login
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </header>
     <main>
         <nav id="painel-controller">
-            <div class="logo-site-nav"></div>
             <ul class="list-nav-menus">
                 <h2>
                     Aulas
@@ -261,5 +285,7 @@
             </div>
         </div>
     </main>
+    <!-- Scripts -->
+    <script type="text/javascript" src="header/assets/js/script.js"></script>
 </body>
 </html>

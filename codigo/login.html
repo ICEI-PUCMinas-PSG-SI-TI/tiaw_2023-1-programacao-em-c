@@ -9,13 +9,40 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="pages-assets/login/css/style.css">
+    <link rel="stylesheet" href="header/assets/css/style.css"><!-- Header styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Login - Programação em C#</title>
 </head>
 <body>
-    <main id="c-form-login">
-        <div class="logo-site-image"></div>
+    <header>
+        <div id="c-maxwidth-header">
+            <div id="c-header-logo">
+            </div>        
+            <nav>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="sobre-nos.html">
+                        Sobre nós
+                    </a>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                    <a href="cadastro.html">
+                        Cadastro
+                    </a>
+                    <a class="login-btn-nav-header" href="login.html">
+                        Login
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="c-form-login">
+            <div class="logo-site-image"></div>
         <form name="form-login-site" class="form-login-site">
             <div class="input-field-form">
                 <i class="material-icons">
@@ -41,6 +68,10 @@
                 Ainda não tem uma conta? <a href="cadastro.html">Criar nova conta</a>
             </p>
         </div>
+        </div>
+        
     </main>
+    <!-- Scripts -->
+    <script type="text/javascript" src="header/assets/js/script.js"></script>
 </body>
 </html>

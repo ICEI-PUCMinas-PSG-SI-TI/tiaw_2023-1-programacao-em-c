@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-body{
-    height: 95vh;
+body,html{    
+    font-family: 'Inter';
+    padding: 0px;
+    margin: 0;
+    background-color: #19BC9D;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: white;
+}
+main{
+    height: calc( 100% - 60px );
     display: flex;
     align-items: center;
-    background-color: #19BC9D;
-    font-family: 'Inter';
 }
 .logo-site-image{
     background-image: url( "../../../project-assets/logo-csharp.png" );
@@ -16,11 +26,11 @@ body{
     height: 100%;
     min-width: 500px;
     height: 500px;
-    margin: auto;
     box-shadow: 0 0 0.3em #ccc;
     background-color: white;
     border-radius: 15px;
     padding: 15px;
+    margin: 10px auto;
 }
 .form-login-site .input-field-form{
     margin: 20px auto;
