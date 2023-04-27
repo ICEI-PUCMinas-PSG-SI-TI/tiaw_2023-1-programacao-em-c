@@ -13,6 +13,18 @@ A ideia principal do projeto é condensar a informação sobre a linguagem e ofe
 * Nome completo do aluno 4
 * Nome completo do aluno 4
 
+## Sprint 1 (15 pontos)
+### Documentação
+**__ATENÇÃO: o arquivo docs/relatorio/Relatorio Tecnico - TEMPLATE.md deve conter a documentação do projeto. Este arquivo é obrigatório. Enquanto esta questão não for resolvida, a nota desta parte (3 pontos) está zerada__**
+- Folha de detalhamento do problema 
+- Persona(s)
+- Histórias de usuários prioritárias (pelo menos 3)
+- Wireframes apresentados no vídeo.
+
+### Observações sobre a apresentação 
+É importante ter um nome bem definido e em destaque quando a apresentação é do produto. Além disso, o foco precisa ser no problema ('dor') e no produto ('solução'), ficando enfatizado porque aquele problema será resolvido para aquele público com sua proposta.
+
+
 ## Professores responsáveis
 
 * João Caram
