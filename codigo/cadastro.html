@@ -80,6 +80,37 @@
                     </div>
                     <div class="c-input-account-new">
                         <i class="material-icons">
+                            badge
+                        </i>
+                        <input placeholder="Idade" value="" type="number" id="user-idade">
+                    </div>
+                    <div class="c-input-account-new">
+                        <select id="s-escolaridade-options">
+                            <option value="" disabled>Selecione uma opção</option>
+                            <option value="ensino-fundamental">Ensino Fundamental</option>
+                            <option value="ensino-medio">Ensino médio</option>
+                            <option value="ensino-superior">Ensino Superior</option>
+                            <option value="pos-graduacao">Pós Graduação</option>
+                        </select>
+                    </div>
+                    <p style="text-align:start;background-color: #ECF0F1;padding: 10px;border-radius: 8px;width: 100%;">
+                        <label for="experiencia-csharp" style="font-weight: 6   00;font-size: 18px;color:#252525">
+                            Já possui alguma experiência com a linguagem C#?
+                        </label><br><br>
+                        <input type="radio" id="sim" name="experiencia-csharp" value="sim" required/>
+                        <label for="sim">Sim</label>
+                        <input type="radio" id="nao" name="experiencia-csharp" value="nao" required/>
+                        <label for="nao">Não</label>
+                    </p>
+                    <p style="text-align:start;background-color: #ECF0F1;padding: 10px;border-radius: 8px;width: 100%;">
+                        <label for="objetivo-csharp" style="font-weight: 6  00;font-size: 18px;color:#252525">
+                            Qual o seu objetivo com o aprendizado da linguagem C#?
+                        </label><br><br>
+                        <textarea id="objetivo-csharp" name="objetivo-csharp" required style="width:100%; max-width: 100%;"></textarea>
+                    </p>
+                    
+                    <div class="c-input-account-new">
+                        <i class="material-icons">
                             mail
                         </i>
                         <input placeholder="Email">

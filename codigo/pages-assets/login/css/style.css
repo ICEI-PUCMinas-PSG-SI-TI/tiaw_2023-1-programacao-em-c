@@ -17,7 +17,7 @@ main{
     align-items: center;
 }
 .logo-site-image{
-    background-image: url( "../../../project-assets/logo-csharp.png" );
+    background-image: url( "../imgs/logo-titulo.jpeg" );
     min-height: 150px;
     background-repeat: no-repeat;
     background-position: center;
