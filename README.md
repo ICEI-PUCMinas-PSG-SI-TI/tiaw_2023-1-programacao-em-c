@@ -7,9 +7,9 @@ A ideia principal do projeto é condensar a informação sobre a linguagem e ofe
 ## Alunos integrantes da equipe
 
 * Arthur Souza Armond
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Artur do Amaral Esteves
+* Danili Cesar de Horta
+* Arthur
 * Nome completo do aluno 4
 * Nome completo do aluno 4
 
