@@ -1,3 +1,5 @@
+console.log( "TESTE" )
+
 // Url pasta
 url = new URL(window.location.href);
 const pathNameFolder = ( (url.pathname).replace( "/conta.html", '' ) ) + "/pages-assets/conta/";
@@ -21,10 +23,10 @@ function set_page_content(){
         return;
     }
 
+    console.log( params )
+
     $( contentDashboard ).load( urlFolder+`templates/${params.content}.html`, function( response, status, xhr ) {
         console.log( response, status, xhr );
-        /*let responseAsObject = $.parseJSON( response );
-        console.log( responseAsObject.ok )*/
     })
       
       
