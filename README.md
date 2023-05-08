@@ -15,6 +15,7 @@ A ideia principal do projeto é condensar a informação sobre a linguagem e ofe
 
 ## Sprint 1 (15 pontos)
 ### Documentação
+<!-- TODO #4 Atualizar documentação @arthur-souza-armond-puc @artfer25-->
 **__ATENÇÃO: o arquivo docs/relatorio/Relatorio Tecnico - TEMPLATE.md deve conter a documentação do projeto. Este arquivo é obrigatório. Enquanto esta questão não for resolvida, a nota desta parte (3 pontos) está zerada__**
 - Folha de detalhamento do problema 
 - Persona(s)
