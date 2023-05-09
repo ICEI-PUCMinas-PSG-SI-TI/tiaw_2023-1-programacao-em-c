@@ -9,7 +9,7 @@ A ideia principal do projeto é condensar a informação sobre a linguagem e ofe
 * Arthur Souza Armond
 * Arthur do Amaral Esteves
 * Danilo Cesar Horta
-* Nome completo do aluno 4
+* Arthur Fernandes Silva Araujo 
 * Nome completo do aluno 4
 * Nome completo do aluno 4
 
