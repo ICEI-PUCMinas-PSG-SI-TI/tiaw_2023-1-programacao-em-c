@@ -72,7 +72,7 @@ Informação, tem dificuldades com as linguagens de
 Programação.
 •Formar-se e ser bem sucedido na profissão.
 > **Exemplo de Ficha**
-> ![Exemplo de Persona](images/persona.png)
+> ![Exemplo de Persona](workspace/persona.png)
  
 
 ## Histórias de Usuários
