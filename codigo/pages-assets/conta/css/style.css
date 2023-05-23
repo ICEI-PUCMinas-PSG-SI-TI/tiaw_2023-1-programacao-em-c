@@ -1,6 +1,9 @@
 a{
     text-decoration: none !important;
 }
+header a{
+    color: #252525;
+}
 
 /* Nav */
 #nav-dash-conta{
@@ -46,10 +49,18 @@ a{
 #c-list-options-dash ul li:last-child{
     border-width: 1px 0px 1px 0px;
 }
+#c-list-options-dash ul li a{
+    color: #252525;
+    font-weight: 600;
+}
 #c-list-options-dash ul li:hover{
     color: white;
     background-color: var( --primaryColorGlobal );
     cursor: pointer;
+}
+#c-list-options-dash ul li:hover a{
+    color: white;
+    font-weight: 600;
 }
 
 #main-dash-content{

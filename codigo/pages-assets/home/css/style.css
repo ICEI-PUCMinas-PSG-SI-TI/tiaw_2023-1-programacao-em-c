@@ -157,12 +157,10 @@ main{
 }
 #c-new-contentes .c-new-content-home{
     padding: 12px;
-    height: 30%;
     margin: 10% auto;
     box-shadow: 0 0 0.1em #252525;
     width: 85%;
     border-radius: 13px;
-    overflow-y: auto;
 }
 #c-new-contentes .c-new-content-home::-webkit-scrollbar {
     width: 0.2em;
