@@ -11,6 +11,9 @@ a{
 header{
     background-color: white;
 }
+header a{
+    color: #252525;
+}
 main{
     height: calc( 100% - 60px );
     display: flex;
@@ -94,4 +97,11 @@ main{
     height: 2px;
     background-color: #ccc;
     margin: 25px auto;
+}
+
+/* Aux classes */
+.empty-input{
+    border: solid;
+    border-width: 1px;
+    border-color: red;
 }

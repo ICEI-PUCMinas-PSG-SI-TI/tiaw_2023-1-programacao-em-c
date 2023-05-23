@@ -76,7 +76,7 @@
                         <i class="material-icons">
                             person
                         </i>
-                        <input placeholder="Nome">
+                        <input placeholder="Nome" id="nome-cadastro">
                     </div>
                     <div class="c-input-account-new">
                         <i class="material-icons">
@@ -86,7 +86,7 @@
                     </div>
                     <div class="c-input-account-new">
                         <select id="s-escolaridade-options">
-                            <option value="" disabled>Selecione uma opção</option>
+                            <option value="" disabled selected>Selecione uma opção</option>
                             <option value="ensino-fundamental">Ensino Fundamental</option>
                             <option value="ensino-medio">Ensino médio</option>
                             <option value="ensino-superior">Ensino Superior</option>
@@ -102,26 +102,25 @@
                         <input type="radio" id="nao" name="experiencia-csharp" value="nao" required/>
                         <label for="nao">Não</label>
                     </p>
-                    <p style="text-align:start;background-color: #ECF0F1;padding: 10px;border-radius: 8px;width: 100%;">
-                        <label for="objetivo-csharp" style="font-weight: 6  00;font-size: 18px;color:#252525">
-                            Qual o seu objetivo com o aprendizado da linguagem C#?
-                        </label><br><br>
-                        <textarea id="objetivo-csharp" name="objetivo-csharp" required style="width:100%; max-width: 100%;"></textarea>
-                    </p>
-                    
                     <div class="c-input-account-new">
                         <i class="material-icons">
                             mail
                         </i>
-                        <input placeholder="Email">
+                        <input placeholder="Email" id="email-cadastro">
                     </div>
                     <div class="c-input-account-new">
                         <i class="material-icons">
                             key
                         </i>
-                        <input placeholder="Senha">
+                        <input placeholder="Senha" id="senha-cadastro" type="password">
                     </div>
-                    <button class="row">
+                    <div class="c-input-account-new">
+                        <i class="material-icons">
+                            key
+                        </i>
+                        <input placeholder="Confirmação senha" id="confirm-senha-cadastro" type="password">
+                    </div>
+                    <button class="row" type="button" onclick="cadastrar()">
                         <span>criar nova conta</span>
                         <i class="material-icons">
                             keyboard_double_arrow_right
@@ -133,5 +132,6 @@
     </main>
     <!-- Scripts -->
     <script type="text/javascript" src="header/assets/js/script.js"></script>
+    <script type="text/javascript" src="pages-assets/cadastro/js/script.js"></script>
 </body>
 </html>
