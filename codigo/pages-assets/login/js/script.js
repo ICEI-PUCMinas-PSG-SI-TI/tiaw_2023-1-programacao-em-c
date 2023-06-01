@@ -32,12 +32,27 @@ function login(  ){
         return;
     }
 
-    if( !exist_localstorage_data(  ) ){
+    let db_users = exist_localstorage_data(  ); 
+    if( !db_users ){
         alert( "Não existe nenhum dado no banco de dados. \n\nPor favor, se cadastre para poder logar" );
         return;
     }
 
-    console.log( "sucesso" );
+    db_users = JSON.parse( db_users );
+    let result = find_user( db_users, username, senha );
+
+    if( !result.status ){
+        alert( result.error_message );
+        return;
+    }
+
+    let sessionResult = set_user_session_id( result.user_id );
+    if( !sessionResult ){
+        alert( "Ocorreu um erro ao salvar sua sessão. Por favor recarregue a página e tente novamente" );
+        return;
+    }
+
+    window.location.href = 'conta.html';
 
 }
 
@@ -60,11 +75,42 @@ function is_valid_email( email ){
 
 function exist_localstorage_data(  ){
 
-    let DB = localStorage.getItem( "DB" );
+    let db = localStorage.getItem( 'db_users' );
+    return ( db == "" || db == null || db == undefined )? false : db;
 
-    if( DB == "" || DB == null || DB == undefined )
+}
+
+function find_user( users, mail, senha ){
+
+    if( !users || !mail || !senha ){
+        return {
+            'status' : false,
+            'error_message' : 'Não foi possível receber os valores para realizar a verificação' 
+        };
+    }
+
+
+    let result = false;
+    users.forEach( user => {
+
+        if( user.user_email == mail && user.user_senha == btoa( senha ) )
+            result = user.user_id;
+
+    } );
+
+    return { 
+        'status' : true,
+        'user_id' : result
+    }
+
+}
+
+function set_user_session_id( user_id ){
+
+    if( !user_id )
         return false;
-    else
-        return true;
+
+    sessionStorage.setItem( 'session', btoa( user_id ) );
+    return true;
 
 }

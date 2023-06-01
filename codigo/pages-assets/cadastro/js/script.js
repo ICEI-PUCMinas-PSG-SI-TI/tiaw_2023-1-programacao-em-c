@@ -50,6 +50,11 @@ function cadastrar(  ){
         return;
     }
 
+    if( exists_mail_db( email ) ){
+        alert( "Ops! Já existe um email com esse endereço. Corrija e tente novamente" );
+        return;
+    }
+
     let data = save_into_db( nome, idade, email, senha, experiencia, optEnsino );
 
     if( data.status != 200 ){
@@ -57,7 +62,8 @@ function cadastrar(  ){
         return;
     }
 
-    alert( "Sucesso!" );
+    sessionStorage.setItem( 'session', btoa( data.user_id ) );
+    window.location.href = 'conta.html';
 
 }
 
@@ -100,11 +106,32 @@ function not_valid_mail( mail ){
     return ! (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test( mail ) ) 
 }
 
+function exists_mail_db( mail ){
+
+    let users = JSON.parse( localStorage.getItem( 'db_users' ) );
+
+    if( users != null ){
+        let validation = false;
+
+        users.forEach( user => {
+            if( mail == user.user_email ){
+                validation = true;
+            }
+        } )
+
+        return validation;
+    }
+
+    return false;
+
+}
+
 function save_into_db( nome, idade, email, senha, experiencia, optEnsino ){
 
     let data = localStorage.getItem( 'db_users' );
 
     if( data == "" || data == null ){
+        console.log( 'first' )
         if( !create_new_db_user(  ) ){
             return {
                 'status' : 400,
@@ -113,31 +140,33 @@ function save_into_db( nome, idade, email, senha, experiencia, optEnsino ){
             }
         }
 
-        create_first_user( nome, idade, email, senha, experiencia, optEnsino )
+        let id = create_first_user( nome, idade, email, senha, experiencia, optEnsino )
 
         return {
-            'status' : 200
+            'status' : 200,
+            'id_user' : id
         }
 
     }
 
     data = JSON.parse( data );
-    let sizeData = ( Object.keys( data ).length + 1 );
+    let sizeData = ( data.length );
     
-    Object.assign( data, {
-        'user_id' : 1,
+    data[ sizeData ] = {
+        'user_id' : data.length,
         'user_name' : nome,
         'user_idade' : idade,
         'user_email' : email,
         'user_senha': btoa( senha ),
         'user_experience' : experiencia,
         'user_ensino' : optEnsino
-    } )
+    }
 
-localStorage.setItem( 'db_users', JSON.stringify( data ) );
+    localStorage.setItem( 'db_users', JSON.stringify( data ) );
 
     return {
-        'status' : 200
+        'status' : 200,
+        'user_id' : sizeData
     }
 
 }
@@ -153,9 +182,8 @@ function create_new_db_user(  ){
 
 function create_first_user( nome, idade, email, senha, experiencia, optEnsino ){
     
-    data = {}
-
-    Object.assign( data, {
+    data = [
+        {
             'user_id' : 1,
             'user_name' : nome,
             'user_idade' : idade,
@@ -163,7 +191,9 @@ function create_first_user( nome, idade, email, senha, experiencia, optEnsino ){
             'user_senha': btoa( senha ),
             'user_experience' : experiencia,
             'user_ensino' : optEnsino
-        } )
+        }
+    ];
 
     localStorage.setItem( 'db_users', JSON.stringify( data ) );
+    return 1;
 }

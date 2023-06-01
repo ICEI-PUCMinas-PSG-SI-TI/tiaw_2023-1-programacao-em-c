@@ -2,6 +2,15 @@
 <html lang="pt-br">
 <head>
 
+    <script>
+        
+        let session = sessionStorage.getItem( 'session' );
+        
+        if( session )
+            window.location.href = 'conta.html'
+
+    </script>
+
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +22,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Login - Programação em C#</title>
+
 </head>
 <body>
     <header>
@@ -43,33 +53,32 @@
     <main>
         <div id="c-form-login">
             <div class="logo-site-image"></div>
-        <form name="form-login-site" class="form-login-site">
-            <div class="input-field-form">
-                <i class="material-icons">
-                    person
-                </i>
-                <input placeholder="Email" value="" type="text" id="user-email-user">
+            <form name="form-login-site" class="form-login-site">
+                <div class="input-field-form">
+                    <i class="material-icons">
+                        person
+                    </i>
+                    <input placeholder="Email" value="" type="text" id="user-email-user">
+                </div>
+                <div class="input-field-form">
+                    <i class="material-icons">
+                        key
+                    </i>
+                    <input placeholder="Senha" value="" type="password" id="senha-user">
+                </div>
+                <div class="c-button-login">
+                    <button type="button" onclick="login()">
+                        Logar
+                    </button>
+                </div>
+            </form>
+            <div class="divider-login"></div>
+            <div class="c-register-text">
+                <p>
+                    Ainda não tem uma conta? <a href="cadastro.html">Criar nova conta</a>
+                </p>
             </div>
-            <div class="input-field-form">
-                <i class="material-icons">
-                    key
-                </i>
-                <input placeholder="Senha" value="" type="password" id="senha-user">
-            </div>
-            <div class="c-button-login">
-                <button type="button" onclick="login()">
-                    Logar
-                </button>
-            </div>
-        </form>
-        <div class="divider-login"></div>
-        <div class="c-register-text">
-            <p>
-                Ainda não tem uma conta? <a href="cadastro.html">Criar nova conta</a>
-            </p>
         </div>
-        </div>
-        
     </main>
     <!-- Scripts -->
     <script type="text/javascript" src="header/assets/js/script.js"></script>

@@ -1,5 +1,3 @@
-console.log( "TESTE" )
-
 // Url pasta
 url = new URL(window.location.href);
 const pathNameFolder = ( (url.pathname).replace( "/conta.html", '' ) ) + "/pages-assets/conta/";
