@@ -35,20 +35,20 @@
                 <div class="col-12 col-md-6">
                     <div class="input-group mb-3">
                         <span class="input-group-text material-icons" id="basic-addon1">mail</span>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" id="email-user">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="input-group mb-3">
-                        <span class="input-group-text material-icons" id="basic-addon1">person</span>
-                        <input type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
+                        <span class="input-group-text material-icons" id="basic-addon1">badge</span>
+                        <input type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1" id="nome-user">
+                    </div>
                 </div>
             </div>
-            <div class="my-3">
+            <div>
                 <div class="input-group mb-3">
                     <span class="input-group-text material-icons" id="basic-addon1">badge</span>
-                    <input type="number" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Idade" aria-label="Username" aria-describedby="basic-addon1" id="idade-user">
                 </div>
             </div>
             <div>
@@ -56,10 +56,10 @@
                     Nível de escolaridade:
                 </label>
                 <select id="escolaridade" class="form-select" multiple aria-label="multiple select example">
-                    <option value="ensino-fundamental" class="p-2">Ensino Fundamental</option>
-                    <option value="ensino-medio" class="p-2">Ensino médio</option>
-                    <option value="ensino-superior" class="p-2">Ensino superior</option>
-                    <option value="pos-graduacao" class="p-2">Pós graduação</option>
+                    <option value="ensino-fundamental" class="p-2 option-school">Ensino Fundamental</option>
+                    <option value="ensino-medio" class="p-2 option-school">Ensino médio</option>
+                    <option value="ensino-superior" class="p-2 option-school">Ensino superior</option>
+                    <option value="pos-graduacao" class="p-2 option-school">Pós graduação</option>
                 </select>
             </div>
             <div class="my-3">
@@ -67,8 +67,8 @@
                     Já possui experiência em C#?
                 </label>
                 <div>
-                    <input name="check-experiencia" value="sim" type="radio" id="check-experiencia-sim"><label for="check-experiencia-sim" style="font-weight: 400;">Sim</label><br>
-                    <input name="check-experiencia" value="nao" type="radio" id="check-experiencia-nao"><label for="check-experiencia-nao" style="font-weight: 400;">Não</label>
+                    <input name="check-experiencia" value="sim" type="radio" id="check-experiencia-sim"><label for="check-experiencia-sim" style="font-weight: 400;" class="ms-2">Sim</label><br>
+                    <input name="check-experiencia" value="nao" type="radio" id="check-experiencia-nao"><label for="check-experiencia-nao" style="font-weight: 400;" class="ms-2">Não</label>
                 </div>
             </div>
         </form>
@@ -77,5 +77,6 @@
                 Editar informações
             </button>
         </div>
-    </div>    
+    </div>
 </div>
+<script id="script-meus-dados" type="text/javascript" src="../codigo/pages-assets/conta/js/script-meus-dados.js"></script>

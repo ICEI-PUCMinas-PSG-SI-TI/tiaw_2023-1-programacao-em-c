@@ -68,3 +68,6 @@ header a{
     width: 80%;
     height: calc( 100vh - 80px );
 }
+#user-avatar{
+    width: 120px;
+}

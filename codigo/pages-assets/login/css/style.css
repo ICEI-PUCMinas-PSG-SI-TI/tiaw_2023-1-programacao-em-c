@@ -103,5 +103,5 @@ main{
 .empty-input{
     border: solid;
     border-width: 1px;
-    border-color: red;
+    border-color: red !important;
 }

@@ -50,14 +50,22 @@ function cadastrar(  ){
         return;
     }
 
-    let data = save_into_db( nome, idade, email, senha, experiencia, optEnsino );
+    if( exists_mail_db( email ) ){
+        alert( "Ops! Já existe um email com esse endereço. Corrija e tente novamente" );
+        return;
+    }
+
+    let db = new DB();
+
+    let data = db.sign_up( nome, idade, email, senha, experiencia, optEnsino );
 
     if( data.status != 200 ){
         alert( data.responseBody );
         return;
     }
 
-    alert( "Sucesso!" );
+    sessionStorage.setItem( 'session', btoa( data.user_id ) );
+    window.location.href = 'conta.html';
 
 }
 
@@ -94,76 +102,30 @@ function is_empty_option_experience( inputs ){
     return validation;
 }
 
-function not_valid_password( senha, confirm ){ return ( senha == confirm )? false : true }
+function not_valid_password( senha, confirm ){ 
+    return ( senha == confirm )? false : true
+}
 
 function not_valid_mail( mail ){ 
     return ! (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test( mail ) ) 
 }
 
-function save_into_db( nome, idade, email, senha, experiencia, optEnsino ){
+function exists_mail_db( mail ){
 
-    let data = localStorage.getItem( 'db_users' );
+    let users = JSON.parse( localStorage.getItem( 'db_users' ) );
 
-    if( data == "" || data == null ){
-        if( !create_new_db_user(  ) ){
-            return {
-                'status' : 400,
-                'status_code' : 'Bad Request',
-                'responseBody' : 'Não foi possível criar uma nova tabela de usuários. Por favor, recarregue a página e tente novamente mais tarde' 
+    if( users != null ){
+        let validation = false;
+
+        users.forEach( user => {
+            if( mail == user.user_email ){
+                validation = true;
             }
-        }
-
-        create_first_user( nome, idade, email, senha, experiencia, optEnsino )
-
-        return {
-            'status' : 200
-        }
-
-    }
-
-    data = JSON.parse( data );
-    let sizeData = ( Object.keys( data ).length + 1 );
-    
-    Object.assign( data, {
-        'user_id' : 1,
-        'user_name' : nome,
-        'user_idade' : idade,
-        'user_email' : email,
-        'user_senha': btoa( senha ),
-        'user_experience' : experiencia,
-        'user_ensino' : optEnsino
-    } )
-
-localStorage.setItem( 'db_users', JSON.stringify( data ) );
-
-    return {
-        'status' : 200
-    }
-
-}
-
-function create_new_db_user(  ){
-
-    if( window.localStorage == undefined || window.localStorage == null )
-        return false;
-
-    return true;
-
-}
-
-function create_first_user( nome, idade, email, senha, experiencia, optEnsino ){
-    
-    data = {}
-
-    Object.assign( data, {
-            'user_id' : 1,
-            'user_name' : nome,
-            'user_idade' : idade,
-            'user_email' : email,
-            'user_senha': btoa( senha ),
-            'user_experience' : experiencia,
-            'user_ensino' : optEnsino
         } )
 
-    localStorage.setItem( 'db_users', JSON.stringify( data ) );
+        return validation;
+    }
+
+    return false;
+
 }

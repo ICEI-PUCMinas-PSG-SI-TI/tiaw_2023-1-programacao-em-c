@@ -2,6 +2,15 @@
 <html lang="pt-br">
 <head>
 
+    <script>
+        
+        let session = sessionStorage.getItem( 'session' );
+        
+        if( session )
+            window.location.href = 'conta.html'
+
+    </script>
+
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -132,6 +141,7 @@
     </main>
     <!-- Scripts -->
     <script type="text/javascript" src="header/assets/js/script.js"></script>
+    <script type="text/javascript" src="global/js/db-actions.js"></script>
     <script type="text/javascript" src="pages-assets/cadastro/js/script.js"></script>
 </body>
 </html>

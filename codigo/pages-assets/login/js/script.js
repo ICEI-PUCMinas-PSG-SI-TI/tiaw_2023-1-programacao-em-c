@@ -32,12 +32,33 @@ function login(  ){
         return;
     }
 
-    if( !exist_localstorage_data(  ) ){
+    // Class controll db
+    let db = new DB();
+
+    let db_users = db.check_empty_table_users(  );
+    if( !db_users ){
         alert( "Não existe nenhum dado no banco de dados. \n\nPor favor, se cadastre para poder logar" );
         return;
     }
 
-    console.log( "sucesso" );
+    db_users = JSON.parse( db_users );
+    let result = db.login( db_users, username, senha );
+
+    if( !result.status ){
+        alert( result.error_message );
+        return;
+    }
+
+    console.log( result )
+
+    let sessionResult = set_user_session_id( result.user_id );
+    if( !sessionResult ){
+        alert( "Ocorreu um erro ao salvar sua sessão. Por favor recarregue a página e tente novamente" );
+        return;
+    }
+
+    window.location.href = ( window.location.href ).replace( 'login.html', 'conta.html' );
+    window.location.href = 'conta.html';
 
 }
 
@@ -58,13 +79,13 @@ function is_valid_email( email ){
     return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test( email );
 }
 
-function exist_localstorage_data(  ){
 
-    let DB = localStorage.getItem( "DB" );
+function set_user_session_id( user_id ){
 
-    if( DB == "" || DB == null || DB == undefined )
+    if( !user_id )
         return false;
-    else
-        return true;
+
+    sessionStorage.setItem( 'session', btoa( user_id ) );
+    return true;
 
 }
