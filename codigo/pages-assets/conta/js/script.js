@@ -17,16 +17,17 @@ function set_page_content(){
     if( params.content == null || params.content == "" ){
         $(function(){
             $(contentDashboard).load( urlFolder+"templates/meus-dados.html" );             
-        });          
-        return;
-    }
+        });
+    }else{
 
-    console.log( params )
+        try{
+            $( contentDashboard ).load( urlFolder+`templates/${params.content}.html`);
+        }catch( err ){
+            console.log( err );
+            alert( "Ops! Ocorreu um erro imprevisível. Por favor, recarregue a página e tente novamente" )
+        }
 
-    $( contentDashboard ).load( urlFolder+`templates/${params.content}.html`, function( response, status, xhr ) {
-        console.log( response, status, xhr );
-    })
-      
+    }    
       
 }
 set_page_content();

@@ -12,14 +12,13 @@ if( !usersCheck || usersCheck.length == 0 ){
     window.location.href = 'cadastro.html';
 }
 
-let exists = false;
+let User = false;
 usersCheck.forEach( user => {
-    console.log( user, user.user_id, session );
-    if( user.user_id == session )
-        exists = true;
+    if( btoa( user.user_id ) == session )
+        User = user;
 });
 
-if( !exists ){
+if( !User ){
     sessionStorage.removeItem( 'session' );
     window.location.href = 'login.html';
 }
