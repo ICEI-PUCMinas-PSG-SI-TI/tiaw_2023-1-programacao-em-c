@@ -122,7 +122,7 @@ const exercicios = {
 
 };
 
- 
+//Modificação feita pelo Gabriel
 
 const listaExercicios = document.getElementById("exercicios");
 
