@@ -65,7 +65,9 @@ function cadastrar(  ){
     }
 
     sessionStorage.setItem( 'session', btoa( data.user_id ) );
-    window.location.href = 'conta.html';
+    setTimeout( function(){
+        window.location.href = 'conta.html';
+    }, 2000 );    
 
 }
 

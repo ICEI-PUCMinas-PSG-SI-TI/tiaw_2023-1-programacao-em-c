@@ -135,7 +135,7 @@ class DB{
          */
         create_first_user( nome, idade, email, senha, experiencia, optEnsino ){
             
-            data = [
+            let data = [
                 {
                     'user_id' : 1,
                     'user_name' : nome,

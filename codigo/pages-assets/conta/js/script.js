@@ -1,3 +1,19 @@
+const cNameUser = document.getElementById( "name-client-sidebar" );
+cNameUser.innerHTML = User.user_name;
+
+// Image Avatar
+const imgAvatar = document.getElementById( "user-avatar" );
+const urlsAvatar = [
+    'https://api.dicebear.com/6.x/adventurer/svg',
+    'https://api.dicebear.com/6.x/bottts/svg',
+    'https://api.dicebear.com/6.x/bottts/svg',
+    'https://api.dicebear.com/6.x/fun-emoji/svg',
+    'https://api.dicebear.com/6.x/lorelei/svg'
+]
+
+imgAvatar.src = urlsAvatar[ Math.floor( Math.random() * (urlsAvatar.length - 0) + 0 ) ];
+
+
 // Url pasta
 url = new URL(window.location.href);
 const pathNameFolder = ( (url.pathname).replace( "/conta.html", '' ) ) + "/pages-assets/conta/";

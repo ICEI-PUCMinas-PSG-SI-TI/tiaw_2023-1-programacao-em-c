@@ -35,27 +35,27 @@
                 <div class="col-12 col-md-6">
                     <div class="input-group mb-3">
                         <span class="input-group-text material-icons" id="basic-addon1">mail</span>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" id="email-user">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" id="email-user" disabled>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="input-group mb-3">
                         <span class="input-group-text material-icons" id="basic-addon1">badge</span>
-                        <input type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1" id="nome-user">
+                        <input type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1" id="nome-user" disabled>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="input-group mb-3">
                     <span class="input-group-text material-icons" id="basic-addon1">badge</span>
-                    <input type="text" class="form-control" placeholder="Idade" aria-label="Username" aria-describedby="basic-addon1" id="idade-user">
+                    <input type="text" class="form-control" placeholder="Idade" aria-label="Username" aria-describedby="basic-addon1" id="idade-user" disabled>
                 </div>
             </div>
             <div>
                 <label>
                     Nível de escolaridade:
                 </label>
-                <select id="escolaridade" class="form-select" multiple aria-label="multiple select example">
+                <select id="escolaridade" class="form-select" multiple aria-label="multiple select example" disabled>
                     <option value="ensino-fundamental" class="p-2 option-school">Ensino Fundamental</option>
                     <option value="ensino-medio" class="p-2 option-school">Ensino médio</option>
                     <option value="ensino-superior" class="p-2 option-school">Ensino superior</option>
@@ -67,14 +67,37 @@
                     Já possui experiência em C#?
                 </label>
                 <div>
-                    <input name="check-experiencia" value="sim" type="radio" id="check-experiencia-sim"><label for="check-experiencia-sim" style="font-weight: 400;" class="ms-2">Sim</label><br>
-                    <input name="check-experiencia" value="nao" type="radio" id="check-experiencia-nao"><label for="check-experiencia-nao" style="font-weight: 400;" class="ms-2">Não</label>
+                    <input name="check-experiencia" value="sim" type="radio" id="check-experiencia-sim" disabled><label for="check-experiencia-sim" style="font-weight: 400;" class="ms-2">Sim</label><br>
+                    <input name="check-experiencia" value="nao" type="radio" id="check-experiencia-nao" disabled><label for="check-experiencia-nao" style="font-weight: 400;" class="ms-2">Não</label>
                 </div>
+            </div>
+            <div class="my-3" id="c-password-inputs" style="display: none;">
+                <p>
+                    <label>
+                        Senha:
+                    </label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text material-icons" id="basic-addon1">badge</span>
+                        <input class="form-control" placeholder="Digite sua senha" value="" id="i-senha-dado" type="password">
+                    </div>                    
+                </p>
+                <p>
+                    <label>
+                        Confirm Senha:
+                    </label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text material-icons" id="basic-addon1">badge</span>
+                        <input class="form-control" placeholder="Digite sua senha" value="" id="i-confirm-senha-dado" type="password">
+                    </div>                      
+                </p>  
             </div>
         </form>
         <div class="text-center my-4">
-            <button class="w-50 bg-success text-light border-0 p-2 rounded">
+            <button class="w-50 bg-success text-light border-0 p-2 rounded mx-auto" style="max-width: 350px;" id="btn-edit-info-user">
                 Editar informações
+            </button>
+            <button class="w-50 bg-success text-light border-0 p-2 rounded mx-auto" style="max-width: 350px;display: none;" id="btn-save-info-user">
+                Salvar informações
             </button>
         </div>
     </div>
