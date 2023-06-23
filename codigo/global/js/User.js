@@ -70,4 +70,12 @@ class UserInfo{
 
     }
 
+    get_conquistas( id ){
+
+        let conquistas = new Conquista( id )
+        conquistas.get_user_conquists(  );
+        return conquistas;
+
+    }
+
 }

@@ -8,9 +8,12 @@ if( !session ){
 let usersCheck = JSON.parse( localStorage.getItem( 'db_users' ) );
 
 if( !usersCheck || usersCheck.length == 0 ){
-    console.log( "t" );
     alert( "Nenhum usuário encontrado no banco de dados" );
-    window.location.href = 'cadastro.html';
+
+    if( !window.location.href.includes( "cadastro.html" ) ){        
+        window.location.href = 'cadastro.html';
+    }
+    
 }
 
 let User = false;

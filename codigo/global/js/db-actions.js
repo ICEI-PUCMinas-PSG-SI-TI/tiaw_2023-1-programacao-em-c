@@ -82,7 +82,7 @@ class DB{
         
                 return {
                     'status' : 200,
-                    'id_user' : id
+                    'user_id' : id
                 }
         
             }
