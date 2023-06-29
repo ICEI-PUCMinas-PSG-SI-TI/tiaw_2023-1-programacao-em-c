@@ -1,11 +1,6 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+TÍTULO DO PROJETO: Desvendando Algoritmos em C# 
 
-Programalçao em C#
-
-`CURSO` 
-
-Sistemas de Informação
 
 ## Participantes
 
@@ -37,14 +32,14 @@ Sistemas de Informação
 
 ## Problema
 
-Demanda de jovens que não possuem acesso ao
-aprendizado de Linguagens de Programação.
-A falta de qualificação de jovens na área de TI.
-Nas nossas pesquisas observamos que existe uma
-demanda maior por profissionais de TI do que a oferta
-disponível no mercado de trabalho.
-## Objetivos
+Verificamos uma grande demanda de jovens que não possuem acesso ao aprendizado de Linguagens de Programação, que devido a falta de qualificação, tendem a perder oportunidades profissionais. O mercado de TI estima que haverá no Brasil um deficit de mão de obra na área de tecnologia em curto prazo.
 
+## Objetivos
+Objetivo Geral: Introduzir os jovens ao estudo da Linguagem C# preparando-os para uma base no assunto.
+Objetivos Específicos: 
+Propor exercícios envolvendo variáveis, estruturas sequenciais, estruturas condicionais,estruturas de repetição, vetores, matrizes e string.  
+Dividir os exercícios de acordo com o tema envolvido, de forma que o usuário possa acessá-los de forma dinâmica.
+Proporcionar um design centrado no usuário.
 
 > 
 > **Link Útil**:
@@ -53,14 +48,12 @@ disponível no mercado de trabalho.
 ## Público-Alvo
 
 
-Clientes: O público alvo será composto por jovens e jovens que desejam começar a aprender sobre programação 
+Clientes: O público alvo será composto por jovens que desejam começar a aprender sobre programação 
  
 # Especificações do Projeto
 
-A arquitetura Web do site será desenvolvida com as
-linguagens HTML, CSS e Javascript.
-O site terá conteúdo sobre a linguagem C# em nível
-básico, intermediário e avançado
+A arquitetura Web do site está sendo desenvolvida com as linguagens HTML, CSS e Javascript.
+O site possui conteúdo sobre a linguagem C# abrangendo teoria  e exercícios.
 
 ## Personas
 
@@ -70,7 +63,7 @@ básico, intermediário e avançado
 •Motivações: Estudante do primeiro ano de Sistemas de
 Informação, tem dificuldades com as linguagens de
 Programação.
-•Formar-se e ser bem sucedido na profissão.
+•Deseja formar-se e ser bem sucedido na profissão. Possui como interesses jogos eletrônicos, assuntos ligados a tecnologia e séries.
 > **Exemplo de Ficha**
 > ![Exemplo de Persona](workspace/persona.png)
  
@@ -79,41 +72,28 @@ Programação.
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... ` Carlos`     | QUERO/PRECISO ... `•Formar-se na faculdade.                     ||PARA ... `ser bem sucedido ma profissão`|
-|--------------------     |------------------------------------                              |----------------------------------------|
-|Estudante do primeiro ano|                                                                  |Lembrar de fazer as atividaes,para poder|
-de Sistemas deInformação, |                                                                  |desenvolver a lógica de progrmação para |
-tem dificuldadescom as    |                                                                  |melhor aprender outras linguagens de    |
-linguagens de Programação | Asisitir videos aulas para tirar minhas dúvidas,fazer exerícios  |programação.                            |
-|                         | poder fixar a matéria aprendida em sala na faculdade.            |                                        |
+Eu Carlos, preciso aprender a linguagem de programação C# que será a minha porta de entrada para o mercado de TI. Pretendo estudar por meio de cursos online, sites sobre o assunto e vídeos online.
 
 ## Requisitos
+Requisitos Funcionais: Como requisitos funcionais, o site possui ítens como login e  página de cadastro de usuários. 
+Requisitos não funcionais: 
+Como requisitos não funcionais temos 
+Metodologia de Design: O Design do site é Centrado no usuário. Ele se refere a uma abordagem de design que possui centralidade em facilitar o acesso do usuário aos conteúdos ligados a C#.
+Desing mais limpo e funcional apresentado no site.
 
-A tabela que segue apresenta os requisitos funcionais do projeto. 
+
+A tabela que segue apresenta resumidamente os  requisitos funcionais do projeto. 
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Um design centrado no usuário.          | ALTA | 
-|RF-002|Conteúdos nos níveis básico,intermediário|
-       |avançado relacionados a linguagem C#|    | ALTA |
-|RF-003| O site deve ter um design atrativo,     | MÉDIA |
-       | para pessoas jovens                     |
-
-
-# Projeto da Solução
-
-A arquitetura Web do site será desenvolvida com as
-linguagens HTML, CSS e Javascript.
-O site terá conteúdo sobre a linguagem C# em nível
-básico, intermediário e avançado
-Clientes: O público alvo será composto por jovens
-universitários dos cursos de TI.
+|RF-002|Conteúdos de diferentes níveis relacionados a linguagem C#|    | ALTA |
+|RF-003| O site possui um design atrativo,     | ALTA |
+       | para pessoas jovens                     
 
 ## Wireframes
-Utilizamos uma site com tom mais claro poruqe percebemos que assim o site fica mais adaptavel para o nosso público alvo,
-no site existem áreas dívididas entre tarefas,aulas,cursos, entr outros para facilitar a navegação do úsuario pelo site. 
 
 > 
 > **Links Úteis**:
@@ -140,6 +120,6 @@ no site existem áreas dívididas entre tarefas,aulas,cursos, entr outros para f
 
 # Conclusões
 
-Decidimos fazer um site na intenção de ensinar e ajudar a tirar dúvidas sobre a linguagem C#, e escolhemos ela porque possui custo menor e mais seguro em relação a outras linguagens Sistema de cache viável e simples grande comunidade online Código compilado em linguagem padrão, independentemente do sistema Operacional e arquitetura de destino.
+Decidimos fazer um site na intenção de introduzir jovens ao aprendizado da linguagem C#, e escolhemos ela porque possui custo menor e mais seguro em relação a outras linguagens. C# é uma linguagem de programação moderna, de propósito geral, orientada a objetos e segura em termos de tipos, desenvolvida pela Microsoft. 
 
 
