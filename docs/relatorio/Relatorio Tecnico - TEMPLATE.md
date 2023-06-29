@@ -73,6 +73,7 @@ Programação.
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 Eu Carlos, preciso aprender a linguagem de programação C# que será a minha porta de entrada para o mercado de TI. Pretendo estudar por meio de cursos online, sites sobre o assunto e vídeos online.
+Para me capacitar, uma vez que não possuo conhecimentos em quaisquer linguagens de programação.
 
 ## Requisitos
 Requisitos Funcionais: Como requisitos funcionais, o site possui ítens como login e  página de cadastro de usuários. 
