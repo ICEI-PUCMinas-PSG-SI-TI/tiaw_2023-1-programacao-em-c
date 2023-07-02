@@ -1,0 +1,157 @@
+const exercicios = {
+
+  "Estrutura Sequencial": [
+
+    "Exercício 1",
+
+    "Exercício 2",
+
+    "Exercício 3",
+
+    "Exercício 4",
+
+    "Exercício 5",
+
+    "Exercício 6",
+
+    "Exercício 7",
+
+    "Exercício 8",
+
+    "Exercício 9",
+
+    "Exercício 10"
+
+  ],
+
+  "Estrutura Condicional": [
+
+    "Exercício 1",
+
+    "Exercício 2",
+
+    "Exercício 3"
+
+    "Exercício 4",
+
+    "Exercício 5",
+
+    "Exercício 6",
+
+    "Exercício 7",
+
+    "Exercício 8",
+
+    "Exercício 9",
+
+    "Exercício 10"
+
+  ],
+
+  "Estrutura de Repetição": [
+
+    "Exercício 1",
+
+    "Exercício 2",
+
+    "Exercício 3",
+
+    "Exercício 4",
+
+    "Exercício 5",
+
+    "Exercício 6",
+
+    "Exercício 7",
+
+    "Exercício 8",
+
+    "Exercício 9",
+
+    "Exercício 10"
+
+  ],
+
+  "Vetores": [
+
+    "Exercício 1",
+
+    "Exercício 2",
+
+    "Exercício 3",
+
+    "Exercício 4",
+
+    "Exercício 5",
+
+    "Exercício 6",
+
+    "Exercício 7",
+
+    "Exercício 8",
+
+    "Exercício 9",
+
+    "Exercício 10"
+
+  ],
+
+"Matrizes": [
+
+    "Exercício 1",
+
+    "Exercício 2",
+
+    "Exercício 3",
+
+    "Exercício 4",
+
+    "Exercício 5",
+
+    "Exercício 6",
+
+    "Exercício 7",
+
+    "Exercício 8",
+
+    "Exercício 9",
+
+    "Exercício 10"
+
+  ]
+
+};
+
+//Modificação feita pelo Gabriel
+
+const listaExercicios = document.getElementById("exercicios");
+
+ 
+
+for (const categoria in exercicios) {
+
+  const tituloCategoria = document.createElement("h2");
+
+  tituloCategoria.textContent = categoria;
+
+  
+
+  const listaExerciciosCategoria = document.createElement("ol");
+
+  
+
+  exercicios[categoria].forEach(exercicio => {
+
+    const itemListaExercicios = document.createElement("li");
+
+    itemListaExercicios.textContent = exercicio;
+
+    listaExerciciosCategoria.appendChild(itemListaExercicios);
+
+  });
+
+  
+
+  listaExercicios.appendChild(tituloCategoria);
+
+  listaExercicios.appendChild(listaExerciciosCategoria);

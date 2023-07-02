@@ -1,0 +1,41 @@
+footer{
+    background-color: #252525;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 15px;
+}
+#c-footer-columns{
+    max-width: 1300px;
+    margin: auto;
+}
+#c-footer-columns .column-footer{
+    width: 25%;
+}
+.column-footer h4{
+    font-size: 1.3em;
+    color: var( --primaryColorGlobal );
+}
+.column-footer li{
+    color: white;
+    margin: 13px 0px;
+}
+.column-footer li a{
+    color: white;
+}
+
+footer .copyright-footer{
+    background-color: #535353;
+    margin: 20px -15px -15px -15px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
+#c-logo-footer{
+    background-image: url( '../../project-assets/logo-csharp.png' );
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}

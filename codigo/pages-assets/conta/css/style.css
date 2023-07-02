@@ -1,0 +1,73 @@
+a{
+    text-decoration: none !important;
+}
+header a{
+    color: #252525;
+}
+
+/* Nav */
+#nav-dash-conta{
+    border: solid;
+    border-width: 1px 1px 0px 0px;
+    height: calc( 100vh - 80px );
+    width: 20%;
+    border-color: #ccc;
+}
+#c-user-picture{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+#c-user-picture i{
+    font-size: 6rem;
+    border: solid;
+    border-radius: 50%;
+    color: var( --primaryColorGlobal );
+}
+#c-user-picture h2{
+    font-size: 1.5em;
+}
+#c-list-options-dash{
+    margin-top: 50px;
+}
+#c-list-options-dash ul{
+    list-style: none;
+    padding: 0;
+}
+#c-list-options-dash ul li{
+    padding: 10px;
+    border: solid;
+    border-width: 1px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#c-list-options-dash ul li i{
+    font-size: 1em;
+}
+#c-list-options-dash ul li:last-child{
+    border-width: 1px 0px 1px 0px;
+}
+#c-list-options-dash ul li a{
+    color: #252525;
+    font-weight: 600;
+}
+#c-list-options-dash ul li:hover{
+    color: white;
+    background-color: var( --primaryColorGlobal );
+    cursor: pointer;
+}
+#c-list-options-dash ul li:hover a{
+    color: white;
+    font-weight: 600;
+}
+
+#main-dash-content{
+    background-color: #cccccc2d;
+    width: 80%;
+    height: calc( 100vh - 80px );
+}
+#user-avatar{
+    width: 120px;
+}

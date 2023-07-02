@@ -1,0 +1,41 @@
+header{    
+    box-shadow: 0 0 0.3em #ccc;
+    min-height: 80px;
+    height: 80px;
+}
+header #c-maxwidth-header{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+}
+header #c-header-logo{
+    width: 35%;
+}
+header nav{
+    width: 65%;
+    text-align: end;
+}
+header nav li{
+    list-style-type:none;
+}
+header nav li a{
+    margin: 0px 15px;
+    cursor: pointer;
+}
+header nav li .login-btn-nav-header{
+    background-color: var( --primaryColorGlobal );
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+#c-header-logo{
+    background-image: url( '../../../project-assets/logo-csharp.png' );
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 50px;
+    margin-top: -15px;
+}

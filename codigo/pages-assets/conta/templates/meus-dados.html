@@ -1,0 +1,105 @@
+
+<head>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        h1{
+            font-size: 1.7em;
+            color: #58AF9C;
+        }
+        #escolaridade{
+            max-height: 200px;
+        }
+        #escolaridade option:hover{
+            background-color: rgba(0, 0, 255, 0.548);
+            color: white;
+            cursor: pointer;
+        }
+        form label{
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+    </style>
+
+</head>
+<div class="p-3" style="height:calc(100vh - 80px);overflow-y: auto;">
+    <h1>
+        Meus dados
+    </h1>
+    <div class="container">
+        <form name="user-info" class="mt-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text material-icons" id="basic-addon1">mail</span>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" id="email-user" disabled>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text material-icons" id="basic-addon1">badge</span>
+                        <input type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1" id="nome-user" disabled>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text material-icons" id="basic-addon1">badge</span>
+                    <input type="text" class="form-control" placeholder="Idade" aria-label="Username" aria-describedby="basic-addon1" id="idade-user" disabled>
+                </div>
+            </div>
+            <div>
+                <label>
+                    Nível de escolaridade:
+                </label>
+                <select id="escolaridade" class="form-select" multiple aria-label="multiple select example" disabled>
+                    <option value="ensino-fundamental" class="p-2 option-school">Ensino Fundamental</option>
+                    <option value="ensino-medio" class="p-2 option-school">Ensino médio</option>
+                    <option value="ensino-superior" class="p-2 option-school">Ensino superior</option>
+                    <option value="pos-graduacao" class="p-2 option-school">Pós graduação</option>
+                </select>
+            </div>
+            <div class="my-3">
+                <label>
+                    Já possui experiência em C#?
+                </label>
+                <div>
+                    <input name="check-experiencia" value="sim" type="radio" id="check-experiencia-sim" disabled><label for="check-experiencia-sim" style="font-weight: 400;" class="ms-2">Sim</label><br>
+                    <input name="check-experiencia" value="nao" type="radio" id="check-experiencia-nao" disabled><label for="check-experiencia-nao" style="font-weight: 400;" class="ms-2">Não</label>
+                </div>
+            </div>
+            <div class="my-3" id="c-password-inputs" style="display: none;">
+                <p>
+                    <label>
+                        Senha:
+                    </label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text material-icons" id="basic-addon1">badge</span>
+                        <input class="form-control" placeholder="Digite sua senha" value="" id="i-senha-dado" type="password">
+                    </div>                    
+                </p>
+                <p>
+                    <label>
+                        Confirm Senha:
+                    </label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text material-icons" id="basic-addon1">badge</span>
+                        <input class="form-control" placeholder="Digite sua senha" value="" id="i-confirm-senha-dado" type="password">
+                    </div>                      
+                </p>  
+            </div>
+        </form>
+        <div class="text-center my-4">
+            <button class="w-50 bg-success text-light border-0 p-2 rounded mx-auto" style="max-width: 350px;" id="btn-edit-info-user">
+                Editar informações
+            </button>
+            <button class="w-50 bg-success text-light border-0 p-2 rounded mx-auto" style="max-width: 350px;display: none;" id="btn-save-info-user">
+                Salvar informações
+            </button>
+        </div>
+    </div>
+</div>
+<script id="script-meus-dados" type="text/javascript" src="../codigo/pages-assets/conta/js/script-meus-dados.js"></script>
