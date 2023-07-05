@@ -32,14 +32,18 @@ TÍTULO DO PROJETO: Desvendando Algoritmos em C#
 
 ## Problema
 
-Verificamos uma grande demanda de jovens que não possuem acesso ao aprendizado de Linguagens de Programação, que devido a falta de qualificação, tendem a perder oportunidades profissionais. O mercado de TI estima que haverá no Brasil um deficit de mão de obra na área de tecnologia em curto prazo.
+Como capacitar os jovens para aprender a programar algoritmos em C#?
+
+##Justificativa
+
+Verificamos uma grande demanda de jovens pelo aprendizado de Linguagens de Programação, que devido a falta de qualificação, tendem a perder oportunidades profissionais. O mercado de TI estima que haverá no Brasil um deficit de mão de obra na área de tecnologia em curto prazo.
 
 ## Objetivos
-    - Objetivo Geral: Introduzir os jovens ao estudo da Linguagem C# preparando-os para uma base no assunto.
+    - Objetivo Geral: Introduzir os jovens ao estudo da Linguagem C#.
     
     - Objetivos Específicos: 
-        - Propor exercícios envolvendo variáveis, estruturas sequenciais, estruturas condicionais,estruturas de repetição, vetores, matrizes e string.  
-        - Dividir os exercícios de acordo com o tema envolvido, de forma que o usuário possa acessá-los de forma dinâmica.
+        - Propor exercícios envolvendo estruturas sequenciais, estruturas condicionais, estruturas de repetição, vetores, matrizes e string.  
+        - Possibilitar  que os usuários acessem os exercícios de forma dinâmica.
         - Proporcionar um design centrado no usuário.
 
 > 
@@ -53,17 +57,16 @@ Clientes: O público alvo será composto por jovens que desejam começar a apren
 # Especificações do Projeto
 
 A arquitetura Web do site está sendo desenvolvida com as linguagens HTML, CSS e Javascript.
-O site possui conteúdo sobre a linguagem C# abrangendo teoria  e exercícios.
+O site possui conteúdo sobre a linguagem C# abrangendo teoria e exercícios.
 
 ## Personas
 
 •Nome: Carlos
 •Idade: 23 anos
 •Ocupação: Auxiliar Administrativo.
-•Motivações: Estudante do primeiro ano de Sistemas de
-Informação, tem dificuldades com as linguagens de
+•Motivações: Possui ensino médio completo e tem dificuldades em aprender linguagens de
 Programação.
-•Deseja formar-se e ser bem sucedido na profissão. Possui como interesses jogos eletrônicos, assuntos ligados a tecnologia e séries.
+•Deseja ingressar na faculdade e ser bem sucedido na profissão. Possui como interesses jogos eletrônicos, assuntos ligados a tecnologia, carros e séries.
 > **Exemplo de Ficha**
 > ![Exemplo de Persona](workspace/persona.png)
  
