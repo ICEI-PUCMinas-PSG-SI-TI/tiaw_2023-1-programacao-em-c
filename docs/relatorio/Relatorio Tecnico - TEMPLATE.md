@@ -57,7 +57,7 @@ Clientes: O público alvo será composto por jovens que desejam iniciar o aprend
 # Especificações do Projeto
 
 A arquitetura Web do site está sendo desenvolvida com as linguagens de marcação em hipertextos como o HTML e CSS. Também foi implementado o Javascript que visa tornar os conteúdos das páginas dinâmicos e realizar as tarefas de guardar informações dentro do banco de dados.
-O site possui exercícios de múltipla escolha envolvendo as linguagem C#.
+O site possui exercícios de múltipla escolha envolvendo a linguagem C#.
 
 ## Personas
 
@@ -90,7 +90,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
     - Como requisitos não funcionais temos 
     - Metodologia de Design: O Design do site é Centrado no usuário. Ele se refere a uma abordagem de design que possui centralidade em facilitar o acesso do usuário aos conteúdos ligados a C#.
-    - Desing mais limpo e funcional apresentado no site.
+    - Design mais limpo e funcional apresentado no site.
     - Optamos por usar apenas uma cor global que possui o código hexadecimal: #58AF9C.
     - A fonte usada no projeto foi a fonte Inter, disponibilizada pelo Google Fonts.
 
@@ -152,7 +152,7 @@ Nessa mesma pasta estão dispostas as pastas que contém os estilos de component
   
 ## Assets e Scripts
 - Existe uma estrutura específica que foi criada para colocar os assets e scripts para rodar em cada página separada, ou seja, cada página html disposta no diretório de código do projeto possui os scripts guardados no directório pages-assets dentro do diretório de código.
-- Além disso, existem as pastas feitas para guardar os assets globais do projeto, que guardam os scripts javascript que fazem o controle da inserção dentro do localStorage, que controlam as classes auxliares do sistema como: User e Conquistas.Já os estilos globais são guardados dentro do global-styles que adiciona pequenas alterações em todas as páginas.	
+- Além disso, existem as pastas feitas para guardar os assets globais do projeto, que guardam os scripts javascript que fazem o controle da inserção dentro do localStorage, que controlam as classes auxliares do sistema como: User e Conquistas. Já os estilos globais são guardados dentro do global-styles que adiciona pequenas alterações em todas as páginas.	
 
 ## Classes
 
@@ -160,13 +160,13 @@ Nessa mesma pasta estão dispostas as pastas que contém os estilos de component
 
 ## Scripts e Interações
 
-  - Sobre as insterações envolvendo o javascript no site, ele foi é usado para manipular o DOM e recuperar informações salvas no localStorage. Desse modo, foi possível obter páginas com conteúdo dinâmico.
-  - Os cripts foram organizados e estruturados de forma que Cada página possui dentro de sua pasta de assets seu próprio arquivo de javascript e que permite alterações no DOM da mesma. Além disso, existe os scripts globais que são sobre classes de User e Conquistas e também o arquivo que faz o controle da requisição dos dados do localStorage.
+  - Sobre as interações envolvendo o javascript no site, ele foi  usado para manipular o DOM e recuperar informações salvas no localStorage. Desse modo, foi possível obter páginas com conteúdo dinâmico.
+  - Os scripts foram organizados e estruturados de forma que cada página possui dentro de sua pasta de assets seu próprio arquivo de javascript e que permite alterações no DOM da mesma. Além disso, existem os scripts globais que são sobre classes de User e Conquistas e também o arquivo que faz o controle da requisição dos dados do localStorage.
 
 ## Testes
 
-  - Foram realizados diversos testes para testar a funcionalidade do sistema de cadastro/login e também a gestão dos dados do localStorage. Todos os testes foram unitários e controlados para entender o comportamento do sistema quando ocorrer cada ação do sistema.
-  - Todas as funcionalidades do sistema foram testadas e protegidas para proteger a alteração de dados do usuário de forma que não prejudique o sistema.
+  - Foram realizados diversos testes para testar a funcionalidade do sistema de cadastro/login e também a gestão dos dados do localStorage. 
+  - Todas as funcionalidades do sistema foram testadas e protegidas para proteger a alteração de dados do usuário, de forma que não prejudique o sistema.
 
 ## Ferramentas e Abordagens utilizadas para testar a funcionalidade, compatibilidade e desempenho.
 
@@ -217,5 +217,6 @@ Nessa mesma pasta estão dispostas as pastas que contém os estilos de component
 # Conclusões
 
 Decidimos fazer um site na intenção de introduzir jovens ao aprendizado da linguagem C#, e escolhemos ela porque possui custo menor e mais seguro em relação a outras linguagens. C# é uma linguagem de programação moderna, de propósito geral, orientada a objetos e segura em termos de tipos, desenvolvida pela Microsoft. 
+O Projeto permitiu uma ampliação dos conhecimentos sobre linguagens de marcação de texto, assepts, scripts, classes, medidas de segurança e validação da entrada de dados, incluindo proteção contra ataques comuns. 
 
 
