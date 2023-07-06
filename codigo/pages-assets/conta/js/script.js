@@ -47,3 +47,24 @@ function set_page_content(){
       
 }
 set_page_content();
+
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+if( width < 768 ){
+
+    controll_view_dashboard(  )
+
+}
+
+function controll_view_dashboard(  ){
+
+    const navDash = document.querySelector( '#nav-dash-conta' );
+
+    navDash.style.display = navDash.style.display == "none" ? "block" : "none";
+
+}
+
+fetch( "https://github.com/search?q=login&type=repositories&ref=advsearch" )
+.then( data => {
+    console.log( data );
+} )

@@ -71,3 +71,22 @@ header a{
 #user-avatar{
     width: 120px;
 }
+.hamburguer-conta{
+    background-color: var( --primaryColorGlobal );
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+    margin-top: -12px;
+}
+
+@media screen and ( max-width: 768px ) {
+    #main-dash-content{
+        width: 100%;
+    }
+    #nav-dash-conta{
+        position: absolute;
+        width: 85%;
+        background-color: #fff;
+        z-index: 10000;
+    }
+}
