@@ -79,6 +79,14 @@ header a{
     margin-top: -12px;
 }
 
+#c-menu-hamburguer{
+    display: none !important;
+}
+
+#c-logo-header-account{
+    text-align: start;
+}
+
 @media screen and ( max-width: 768px ) {
     #main-dash-content{
         width: 100%;
@@ -88,5 +96,11 @@ header a{
         width: 85%;
         background-color: #fff;
         z-index: 10000;
+    }
+    #c-menu-hamburguer{
+        display: flex !important;
+    }
+    #c-logo-header-account{
+        text-align: end;
     }
 }
