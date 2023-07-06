@@ -1,4 +1,6 @@
 # Tarefas
-- Melhorar página principal
-- Colocar dados dinâmicos na página principal
-- Melhorar página de sobre nós
+- Melhorar mudança de dados na página de conta
+- Centralizar modal de login
+- Mudar página principal
+- Mudar página de sobre-nós
+- 
