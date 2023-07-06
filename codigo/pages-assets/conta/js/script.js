@@ -63,8 +63,3 @@ function controll_view_dashboard(  ){
     navDash.style.display = navDash.style.display == "none" ? "block" : "none";
 
 }
-
-fetch( "https://github.com/search?q=login&type=repositories&ref=advsearch" )
-.then( data => {
-    console.log( data );
-} )
