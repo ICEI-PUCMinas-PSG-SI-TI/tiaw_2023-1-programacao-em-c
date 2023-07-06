@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* Classes auxiliares */
 .divider-login{    
@@ -74,8 +74,7 @@ main #login-call{
 
 #create-account-side{    
     display: flex;
-    align-items: center;
-    width: 65%;
+    align-items: center;    
     overflow-y: auto;
     height: 100%;
 }
@@ -112,7 +111,7 @@ main #login-call{
 }
 #create-account-side form .c-input-account-new{
     background-color: #ECF0F1;
-    width: 100%;
+    width: 95%;
     border: none;
     padding: 5px;
     display: flex;
@@ -150,4 +149,16 @@ main #login-call{
     border-radius: 15px;
     box-shadow: 0 0 0.3em #ccc;
     cursor: pointer;
+}
+
+@media screen and ( max-width: 768px ){
+    #login-call{
+        display: none !important;
+    }
+    #create-account-side{
+        overflow-y: none;
+    }
+    #create-account-side form{
+        width: 100%;
+    }
 }

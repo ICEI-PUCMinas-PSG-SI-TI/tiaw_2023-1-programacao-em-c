@@ -42,7 +42,7 @@ header{
     border-width: 0.1em;
     padding: 10px; 
     color: #252525;
-    width: 60%;
+    width: 100%;
 }
 #i-mail-sign-up::placeholder{
     color: #252525;
@@ -54,7 +54,70 @@ header{
     font-weight: bolder;
     box-shadow: 0 0 0.3em #25252598;
     cursor: pointer;
+    display: block;
 }
 #link-to-sign-up:hover{
     background-color: #ffe484;
+}
+
+#title-page{
+    font-size: 4rem; 
+    color: black;
+}
+#sub-title-page{
+    font-size: 1.5em;
+}
+
+.desktop-center{
+    text-align: center;
+}
+
+.cta-button{
+    display: block;
+    width: 75%;
+    margin: auto;
+    background-color: rgb(29, 202, 29);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 35px;
+    max-width: 600px;
+}
+
+#c-all-content-site{
+    background-color: #e9e9e9;
+    box-shadow: 0 0 0.1em #636363;
+    padding: 15px;
+    max-width:900px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+#c-all-content-site li{
+    margin-top: 20px;
+}
+
+@media screen and ( max-width: 768px ){
+    #i-mail-sign-up{
+        width: 100%;
+    }
+    #title-page{
+        font-size: 2rem;
+    }
+    #sub-title-page{
+        font-size: 0.9em;
+    }
+    .desktop-center{
+        text-align: start;
+    }
+    #link-to-sign-up{
+        text-align: center;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    #i-mail-sign-up{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
 }

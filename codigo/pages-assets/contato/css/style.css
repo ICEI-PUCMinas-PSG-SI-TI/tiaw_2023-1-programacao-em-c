@@ -18,8 +18,7 @@ a{
     margin: 200px 0px;
 }
 #c-contato #c-info-contato{
-    width: 60%;
-    margin-left: 5%;
+    margin-top: -60px;
 }
 #c-contato #c-info-contato h1{
     color: white;
@@ -30,7 +29,6 @@ a{
 }
 
 #c-contato #c-form-contato{
-    width: 30%;
     height: 150%;
     background-color: white;
     box-shadow: 0 0 0.8em #ccc;
@@ -39,6 +37,7 @@ a{
     border-width: 1px;
     border-color: #717171;
     border-radius: 12px;
+    margin-top: -6%;
 }
 #c-contato #c-form-contato form{
     height: 100%;
@@ -82,4 +81,20 @@ a{
 }
 #c-form-contato .c-input-form input:focus{
     outline: none;
+}
+
+@media screen and ( max-width: 768px ){
+    #c-contato{
+        height: 100%;
+        margin: 30px 0px;
+    }
+    #c-contato #c-info-contato{
+        padding: 40px 10px;
+        margin-top: 0px;
+    }
+    #c-contato #c-form-contato{
+        width: calc( 100% - 10px );
+        margin-top: 0px;
+        margin: 5px;
+    }
 }

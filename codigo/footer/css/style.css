@@ -8,9 +8,6 @@ footer{
     max-width: 1300px;
     margin: auto;
 }
-#c-footer-columns .column-footer{
-    width: 25%;
-}
 .column-footer h4{
     font-size: 1.3em;
     color: var( --primaryColorGlobal );
@@ -31,11 +28,15 @@ footer .copyright-footer{
     text-align: center;
 }
 #c-logo-footer{
-    background-image: url( '../../project-assets/logo-csharp.png' );
+    background-image: url( '../../project-assets/logo-transparent.png' );
     background-position: center;
     background-repeat: no-repeat;
     height: 50px;
     display: flex;
     align-items: center;
     margin-top: 40px;
+}
+
+@media screen and ( max-width: 768px ){
+
 }

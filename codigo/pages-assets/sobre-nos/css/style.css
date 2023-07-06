@@ -21,7 +21,6 @@ main{
     height: 80vh;
 }
 .first-content #content-first{
-    width: 50%;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -35,7 +34,6 @@ main{
     font-weight: bold;
 }
 .first-content #image-first{
-    width: 50%;
     background-image: url( "https://cdn.dribbble.com/users/2155131/screenshots/7497844/media/b45d46c88f9531594404d054834256aa.jpg?compress=1&resize=400x300&vertical=top" );
     background-repeat: no-repeat;
     background-position: center;
@@ -71,13 +69,9 @@ main{
     background-position: center;
     background-size: contain;
     height: 300px;
-    width: 30%;
     margin: 0px 5%;
     border-top-left-radius: 50px;
     background-repeat: no-repeat;
-}
-.second-content .c-history-enterprise{
-    width: 60%;
 }
 .second-content .c-history-enterprise h2{
     color: var( --primaryColorGlobal );

@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="global-styles/style.css"><!-- Global styles -->
     <link rel="stylesheet" href="header/assets/css/style.css"><!-- Header styles -->
     <link rel="stylesheet" href="pages-assets/home/css/style.css">
+    <link rel="stylesheet" href="footer/css/style.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
 
     <title>Programação em C#</title>
 </head>
@@ -22,24 +23,37 @@
     <header>
         <div id="c-maxwidth-header">
             <div id="c-header-logo"></div>
+            <span class="material-icons mob-hamburguer">
+                menu
+            </span>
             <nav>
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                    <a href="sobre-nos.html">
-                        Sobre nós
-                    </a>
-                    <a href="contato.html">
-                        Contato
-                    </a>
-                    <a href="cadastro.html">
-                        Cadastro
-                    </a>
-                    <a class="login-btn-nav-header" href="login.html">
-                        Login
-                    </a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="sobre-nos.html">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">
+                            Cadastro
+                        </a>
+                    </li>
+                    <li>
+                        <a class="login-btn-nav-header" href="login.html">
+                            Login
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -56,10 +70,10 @@
                         <img alt="logotipo site" src="project-assets/logo-transparent.png" class="bg-light rounded-5">
                     </div>
                     <div>
-                        <h1 class="fw-bolder" style="font-size: 4rem; color: black;">
+                        <h1 class="fw-bolder" id="title-page">
                             Aprenda algorítimos de uma maneira simples e fácil!
                         </h1>
-                        <p style="font-size: 1.5em;">
+                        <p id="sub-title-page">
                             Fácil, simples, intuitiva e integrada, tudo o que a sua plataforma de aprendizado precisa para acompanhar você nessa jornada!
                         </p>
                         <div class="row my-5">
@@ -77,41 +91,163 @@
             </div>
         </div>
         <div id="c-first-content" class="py-5 container col-md-8">
-            <div class="text-center">
+            <div class="desktop-center">
                 <span class="material-icons p-3 rounded" style="background-color: #f3f2f2; color: #58AF9C;box-shadow: 0 0 0.3em #ccc;">
                     code
                 </span>
-                <h2 class="mt-4 fw-bolder" style="color: black;">
+                <h2 class="mt-4 fw-bolder w-md-50" style="color: black;">
                     Estude da maneira que quiser!
                 </h2>
-                <p class="w-75 mx-auto">
-                    Aqui você vai encontrar todos os materiais necessários para aprender tudo sobre algorítimos, e o melhor? Ainda pode ver tudo no seu tempo!
-                </p>
             </div>
             <div class="row">
-                <div class="col-md-6 col-6">
+                <div class="col-md-6 col-12 text-center">
+                    <img alt="Imagem ilustrativa multi tarefa" src="project-assets/img-multi-tarefa.png" class="w-75">
+                </div>
+                <div class="col-md-6 col-12">
+                    <h3 class="fw-bold mt-5">
+                        Tudo no seu tempo...
+                    </h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veniam provident, cupiditate facilis obcaecati voluptas atque aut eligendi in ipsum, dignissimos, qui deleniti itaque fugit eius nulla earum commodi perspiciatis.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid iusto, nostrum dicta a odit facilis sed pariatur error placeat corporis qui deleniti quisquam tempore praesentium quaerat ut natus distinctio!
                         <br><br>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quos nisi? Eius, voluptatum consequatur quaerat nesciunt, possimus facere distinctio asperiores dolorem natus, est maxime expedita esse id error alias illo.
                     </p>
-                </div>
-                <div class="col-md-6 col-6 text-center">
-                    <img alt="Imagem ilustrativa multi tarefa" src="project-assets/img-multi-tarefa.png" class="w-75">
-                </div>
+                    <a class="cta-button">
+                        Quero começar a aprender!
+                    </a>
+                </div>                
             </div>
         </div>
         <div id="c-second-content" class="py-5 container col-md-8">
-            <div>
-                <span class="material-icons p-3 rounded" style="background-color: #f3f2f2; color: #58AF9C;box-shadow: 0 0 0.3em #ccc;">
-                    database
+            <div class="desktop-center">
+                <span class="material-icons  p-3 rounded" style="background-color: #f3f2f2; color: #58AF9C;box-shadow: 0 0 0.3em #ccc;">
+                    account_tree
                 </span>
+                <h2 class="mt-4 fw-bolder w-md-50" style="color: #000;">
+                    Encontre materiais de outros desenvolvedores!
+                </h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-12 text-center">
+                    <img alt="Imagem ilustrativa para desenvolvedores" src="project-assets/other-users.png" class="w-75 mx-auto">
+                </div>
+                <div class="col-md-6 col-12">
+                    <h3 class="fw-bold mt-5">
+                        Explore o Github
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum vel corrupti tenetur consequatur itaque praesentium ut aspernatur laboriosam voluptatum, ratione quis nihil numquam ipsam exercitationem nobis! Quia, impedit animi!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et maxime cum repellendus delectus ullam esse quae enim saepe sapiente. Vitae consectetur, eveniet doloremque impedit sapiente quos nam quam repellendus nihil?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos enim aliquid et doloremque eos aut veniam alias ratione culpa nostrum? Eius, fuga voluptas. Repellendus recusandae quaerat fugit, porro tenetur nam!
+                    </p>
+                    <a class="cta-button">
+                        Quero começar a aprender!
+                    </a>
+                </div>
             </div>
         </div>
-    </main>    
+        <div id="c-third-content" class="py-5 container">
+            <div class="desktop-center">
+                <span class="material-icons-outlined p-3 rounded" style="background-color: #f3f2f2; color: #58AF9C;box-shadow: 0 0 0.3em #ccc;">
+                    folder
+                </span>
+                <h2 class="mt-4 fw-bolder w-md-50" style="color: #000;">
+                    Confira tudo que você terá acesso
+                </h2>
+            </div>
+            <div class="mx-auto" id="c-all-content-site">
+                <ul>
+                    <li>
+                        Busca por repositórios de outros desenvolvedores
+                    </li>
+                    <li>
+                        Exercícios de fixação de exercícios
+                    </li>
+                    <li>
+                        Conexão com a sua conta do LeetCode
+                    </li>
+                    <li>
+                        Materiais de apoio e ensino
+                    </li>
+                    <li>
+                        Ranking e pontuações para os acertos em exercícios
+                    </li>
+                    <li>
+                        Conexão com github
+                    </li>
+                </ul>
+            </div>
+            <a class="cta-button">
+                Quero começar a aprender!
+            </a>    
+        </div>
+    </main>
+    <footer>
+        <div id="c-footer-columns" class="row">
+            <div class="column-footer col-md-3 col-12 mb-5" id="c-logo-footer">
+            </div>
+            <div class="column-footer col-md-3 col-12">
+                <h4>
+                    Links de ajuda
+                </h4>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre-nos.html">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">
+                            Cadastro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="column-footer col-md-3 col-12">
+                <h4>
+                    Contato
+                </h4>
+                <ul>
+                    <li>
+                        ( 31 ) 97554-7967
+                    </li>
+                    <li>
+                        1477667@sga.pucminas.br
+                    </li>
+                </ul>
+            </div>
+            <div class="column-footer col-md-3 col-12">
+                <h4>
+                    Endereço
+                </h4>
+                <p style="color: white;">
+                    Rua Walter Ianni, 255 - São Gabriel, Belo Horizonte - MG, 31980-110
+                </p>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            &copy; Copyright Programação em C# - 2023
+        </div>
+    </footer>
     <!-- Scripts -->
     <script type="text/javascript" src="header/assets/js/script.js"></script>
+    <script type="text/javascript" src="pages-assets/home/js/home-script.js"></script>
 </body>
 
 </html>
