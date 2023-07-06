@@ -25,40 +25,19 @@
 </head>
 <body>
     <header>
-        <div id="c-maxwidth-header">
-            <div id="c-header-logo"></div>
-            <span class="material-icons mob-hamburguer">
-                menu
-            </span>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a> 
-                    </li>
-                    <li>
-                        <a href="sobre-nos.html">
-                            Sobre nós
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html">
-                            Contato
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cadastro.html">
-                            Cadastro
-                        </a>
-                    </li>
-                    <li>
-                        <a class="login-btn-nav-header" href="login.html">
-                            Login
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="row justify-content-between align-content-center">
+                <div class="col-6 d-flex align-content-center" style="flex-wrap: wrap;">
+                    <span class="material-icons hamburguer-conta d-inline-flex" style="width: 48px; height: 48px;font-size: 32px;" onclick="controll_view_dashboard(  )">
+                        menu
+                    </span>
+                </div>
+                <div class="col-6 text-end">
+                    <a href="../codigo/index.html">
+                        <img alt="Logotipo site" src="project-assets/logo-transparent.png" style="height: 120px;margin-top: -30px;">
+                    </a> 
+                </div>
+            </div>                       
         </div>
     </header>
     <div style="display:flex">
@@ -82,30 +61,6 @@
                     <li>
                         <a href="?content=conquistas">
                             Conquistas
-                        </a>
-                        <i class="material-icons">
-                            arrow_forward_ios
-                        </i>
-                    </li>
-                    <li>
-                        <a href="?content=desafios">
-                            Desafios
-                        </a>
-                        <i class="material-icons">
-                            arrow_forward_ios
-                        </i>
-                    </li>
-                    <li>
-                        <a href="?content=relatorios">
-                            Relatórios
-                        </a>
-                        <i class="material-icons">
-                            arrow_forward_ios
-                        </i>
-                    </li>
-                    <li>
-                        <a href="?content=exercicios">
-                            Exercícios  
                         </a>
                         <i class="material-icons">
                             arrow_forward_ios

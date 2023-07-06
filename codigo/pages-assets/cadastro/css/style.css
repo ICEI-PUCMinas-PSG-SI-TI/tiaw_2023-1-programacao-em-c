@@ -38,7 +38,6 @@ main{
 }
 main #login-call{
     background-color: var( --primaryColorGlobal );
-    width: 35%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -77,6 +76,7 @@ main #login-call{
     align-items: center;    
     overflow-y: auto;
     height: 100%;
+    padding: 0;
 }
 #create-account-side #c-center-form-create-account{
     text-align: center;
