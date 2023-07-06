@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <!-- Links -->
     <link rel="stylesheet" href="global-styles/style.css"><!-- Global styles -->
     <link rel="stylesheet" href="header/assets/css/style.css"><!-- Header styles -->
@@ -42,249 +44,72 @@
         </div>
     </header>
     <main>
-        <nav id="painel-controller">
-            <ul class="list-nav-menus">
-                <h2>
-                    Aulas
-                </h2>
-                <li>
-                    <a>Aulas</a>
-                </li>
-                <li>
-                    <a href="sobre-nos.html">
-                        Tarefas
-                    </a>
-                </li>
-                <li>
-                    <a href="contato.html">
-                        Desafios
-                    </a>
-                </li>
-                <li>
-                    <a href="cadastro.html">
-                        Configurações
-                    </a>
-                </li>
-                <li>
-                    <a class="login-btn-nav-header" href="login.html">
-                        Login
-                    </a>
-                </li>
-                <h2>
-                    Páginas
-                </h2>
-                <li>
-                    <a href="conta.html">
-                        Minha conta
-                    </a>
-                </li>
-                <div style="height:100px"></div>
-            </ul>
-        </nav>
-        <aside id="c-content-page">
-            <div id="dinamic-content">
-                <div class="img-header-content-page"
-                    style="background-image: url( 'https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=' )">
-                </div>
-                <h1>
-                    Introdução a programação em C#
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ea alias ipsum excepturi. Id magnam
-                    animi beatae neque numquam nulla repellendus non voluptate, excepturi ad, aliquid laudantium eum
-                    adipisci! Voluptas.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quam non ab, laudantium culpa
-                    cumque laborum nihil libero, illo, iure necessitatibus commodi suscipit possimus excepturi. Maiores
-                    laborum rem placeat sequi?
-                </p>
-                <div class="code-contain-content">
-                    <div class="c-copy-code-button">
-                        <span>
-                            <i class="material-icons">
-                                file_copy
-                            </i>
-                            Copiar
-                        </span>
-                    </div>
-                    <div class="code-contain">
-                        <p>
-                            using System;<br>
-                            <br>
-                            namespace Programa01{<br>
-                            <br>
-                            class Program{<br>
-                            <br>
-                            static void Main( string[] str ){<br>
-                            <br>
-                            Console.WriteLine( "Hello Word" );<br>
-                            <br>
-                            }
-                            <br>
-                            }
-                            <br>
-                            <span class="property-name">justify-content: </span><span>space-between</span>
-                            }
+        <div class="bd-masthead py-5">
+            <div class="container">
+                <div class="text-center col-md-8 mx-auto">
+                    <div>
+                        <p id="warning-new-visitor">
+                            <span id="badge-warning">NOVO</span> Passo a passo para você se tornar um desenvolvedor!
                         </p>
                     </div>
-                </div><br><br>
-                <h2>
-                    Operadores lógicos
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reiciendis ea tenetur consequuntur
-                    voluptatum minima tempora nemo officia, magnam optio quibusdam praesentium deleniti eum ipsa
-                    laudantium deserunt non rerum recusandae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, similique corrupti
-                    perspiciatis officia, magnam minus consectetur laborum quod, quibusdam eligendi ea? Eaque qui, odio
-                    consectetur dignissimos porro illum fuga doloremque?
-                </p>
-                <div class="code-contain-content">
-                    <div class="c-copy-code-button">
-                        <span>
-                            <i class="material-icons">
-                                file_copy
-                            </i>
-                            Copiar
-                        </span>
+                    <div class="text-center my-5">                
+                        <img alt="logotipo site" src="project-assets/logo-transparent.png" class="bg-light rounded-5">
                     </div>
-                    <div class="code-contain">
-                        <p>
-                            using System;<br>
-                            <br>
-                            namespace Programa01{<br>
-                            <br>
-                            class Program{<br>
-                            <br>
-                            static void Main( string[] str ){<br>
-                            <br>
-                            Console.WriteLine( "Hello Word" );<br>
-                            <br>
-                            }
-                            <br>
-                            }
-                            <br>
-                            }
+                    <div>
+                        <h1 class="fw-bolder" style="font-size: 4rem; color: black;">
+                            Aprenda algorítimos de uma maneira simples e fácil!
+                        </h1>
+                        <p style="font-size: 1.5em;">
+                            Fácil, simples, intuitiva e integrada, tudo o que a sua plataforma de aprendizado precisa para acompanhar você nessa jornada!
                         </p>
+                        <div class="row my-5">
+                            <div class="col-md-8 col-12 text-end">
+                                <input placeholder="examplo@mail.com" id="i-mail-sign-up">
+                            </div>
+                            <div class="col-md-4 col-12 text-start">
+                                <a id="link-to-sign-up">
+                                    Começar agora!
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div><br><br>
+                </div>            
             </div>
-            <div id="c-new-contentes">
-                <div class="c-search-btns row">
-                    <i class="material-icons">
-                        mark_unread_chat_alt
-                    </i>
-                    <i class="material-icons">
-                        notifications
-                    </i>
-                    <div class="search-input row">
-                        <i class="material-icons">
-                            search
-                        </i>
-                        <input placeholder="Busque pelo que deseja..." value="">
-                    </div>
+        </div>
+        <div id="c-first-content" class="py-5 container col-md-8">
+            <div class="text-center">
+                <span class="material-icons p-3 rounded" style="background-color: #f3f2f2; color: #58AF9C;box-shadow: 0 0 0.3em #ccc;">
+                    code
+                </span>
+                <h2 class="mt-4 fw-bolder" style="color: black;">
+                    Estude da maneira que quiser!
+                </h2>
+                <p class="w-75 mx-auto">
+                    Aqui você vai encontrar todos os materiais necessários para aprender tudo sobre algorítimos, e o melhor? Ainda pode ver tudo no seu tempo!
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-6">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veniam provident, cupiditate facilis obcaecati voluptas atque aut eligendi in ipsum, dignissimos, qui deleniti itaque fugit eius nulla earum commodi perspiciatis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquid iusto, nostrum dicta a odit facilis sed pariatur error placeat corporis qui deleniti quisquam tempore praesentium quaerat ut natus distinctio!
+                        <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quos nisi? Eius, voluptatum consequatur quaerat nesciunt, possimus facere distinctio asperiores dolorem natus, est maxime expedita esse id error alias illo.
+                    </p>
                 </div>
-                <div class="c-new-content-home">
-                    <h4 class="row">
-                        <span>
-                            Atividades
-                        </span>
-                        <i class="material-icons">
-                            more_horiz
-                        </i>
-                    </h4>
-                    <div class="c-info-content">
-                        <h5>
-                            Exercícios sobre estrutura de repetição
-                        </h5>
-                        <div class="info-new-content row">
-                            <span class="time-posting">
-                                12 horas atrás
-                            </span>
-                            <span class="active-type-content">
-                                Ativado
-                            </span>
-                        </div>
-                    </div>
-                    <div class="c-info-content">
-                        <h5>
-                            Exercícios sobre estruturas sequenciais
-                        </h5>
-                        <div class="info-new-content row">
-                            <span class="time-posting">
-                                12 horas atrás
-                            </span>
-                            <span class="active-type-content">
-                                Ativado
-                            </span>
-                        </div>
-                    </div>
-                    <div class="c-info-content">
-                        <h5>
-                            Exercícios sobre algorítimos variados
-                        </h5>
-                        <div class="info-new-content row">
-                            <span class="time-posting">
-                                12 horas atrás
-                            </span>
-                            <span class="active-type-content">
-                                Ativado
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="c-new-content-home">
-                    <h4 class="row">
-                        <span>
-                            Desafios
-                        </span>
-                        <i class="material-icons">
-                            more_horiz
-                        </i>
-                    </h4>
-                    <div class="c-info-content">
-                        <h5>
-                            Projeto 01 - Hello Word
-                        </h5>
-                        <div class="info-new-content row">
-                            <span class="time-posting">
-                                12 horas atrás
-                            </span>
-                            <span class="active-type-content">
-                                Ativado
-                            </span>
-                        </div>
-                    </div>
-                    <div class="c-info-content">
-                        <h5>
-                            Projeto 02 - Estruturas condicionais
-                        </h5>
-                        <div class="info-new-content row">
-                            <span class="time-posting">
-                                12 horas atrás
-                            </span>
-                            <span class="active-type-content">
-                                Ativado
-                            </span>
-                        </div>
-                    </div>
-                    <div class="c-info-content">
-                        <h5>
-                            Projeto 03 - Estruturas de repetição
-                        </h5>
-                        <div class="info-new-content row">
-                            <span class="time-posting">
-                                12 horas atrás
-                            </span>
-                            <span class="active-type-content">
-                                Ativado
-                            </span>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-6 text-center">
+                    <img alt="Imagem ilustrativa multi tarefa" src="project-assets/img-multi-tarefa.png" class="w-75">
                 </div>
             </div>
-        </aside>
-
-    </main>
+        </div>
+        <div id="c-second-content" class="py-5 container col-md-8">
+            <div>
+                <span class="material-icons p-3 rounded" style="background-color: #f3f2f2; color: #58AF9C;box-shadow: 0 0 0.3em #ccc;">
+                    database
+                </span>
+            </div>
+        </div>
+    </main>    
     <!-- Scripts -->
     <script type="text/javascript" src="header/assets/js/script.js"></script>
 </body>
