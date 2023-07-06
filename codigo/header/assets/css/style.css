@@ -18,8 +18,10 @@ header nav{
     width: 65%;
     text-align: end;
 }
-header nav li{
+header nav ul{
     list-style-type:none;
+    display: flex;
+    justify-content: end;
 }
 header nav li a{
     margin: 0px 15px;
@@ -38,4 +40,50 @@ header nav li .login-btn-nav-header{
     background-repeat: no-repeat;
     height: 50px;
     margin-top: -15px;
+}
+
+.mob-hamburguer{
+    background-color: var( --primaryColorGlobal );
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 10px;
+    display: none !important;
+}
+
+@media screen and ( max-width: 768px ){
+    header nav{
+        position: absolute;
+        margin-top: 330px;
+        background-color: white;
+        width: 100%;
+        text-align: start;
+        box-shadow: 0 0 0.3em #25252569;
+    }
+    header nav ul{
+        padding: 0;
+        display: block;
+    }
+    header nav ul li{
+        border: solid;
+        border-width: 0px 0px 1px 0px;
+        border-color: #ccc;
+    }
+    header nav li a{
+        color: #252525;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+    }
+    header nav li .login-btn-nav-header{
+        background-color: #fff;
+        color: #252525;
+        display: block;
+    }
+    header #c-maxwidth-header{
+        justify-content: space-between;
+    }
+    .mob-hamburguer{
+        display: block !important;
+    }
 }

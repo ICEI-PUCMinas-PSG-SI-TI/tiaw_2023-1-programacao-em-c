@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <!-- Links -->
     <link rel="stylesheet" href="global-styles/style.css"><!-- Global styles -->
     <link rel="stylesheet" href="header/assets/css/style.css"><!-- Header styles -->
@@ -18,31 +20,44 @@
 <body>
     <header>
         <div id="c-maxwidth-header">
-            <div id="c-header-logo"></div>        
+            <div id="c-header-logo"></div>
+            <span class="material-icons mob-hamburguer">
+                menu
+            </span>
             <nav>
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                    <a href="sobre-nos.html">
-                        Sobre nós
-                    </a>
-                    <a href="contato.html">
-                        Contato
-                    </a>
-                    <a href="cadastro.html">
-                        Cadastro
-                    </a>
-                    <a class="login-btn-nav-header" href="login.html">
-                        Login
-                    </a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="sobre-nos.html">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">
+                            Cadastro
+                        </a>
+                    </li>
+                    <li>
+                        <a class="login-btn-nav-header" href="login.html">
+                            Login
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="first-content">
-            <aside id="content-first">
+        <div class="first-content row">
+            <aside id="content-first" class="col-md-6 col-12">
                 <div id="content">
                     <h1>
                         Aprenda sobre <a>Algorítimos</a><br>
@@ -53,19 +68,21 @@
                     </p>
                 </div>                
             </aside>
-            <div id="image-first"></div>
-        </div>
-        <div class="second-content row">
-            <div id="image-history-enterprise">
-                   
+            <div id="image-first" class="col-md-6 col-12">
+                <img class="w-100" src="https://cdn.dribbble.com/users/2155131/screenshots/7497844/media/b45d46c88f9531594404d054834256aa.jpg?compress=1&resize=400x300&vertical=top">
             </div>
-            <div class="c-history-enterprise">
+        </div>
+        <div class="second-content row">            
+            <div class="c-history-enterprise col-md-6 col-12" >
                 <h2>
                     História da empresa
                 </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nisi saepe consectetur accusamus, ducimus vero quas tempora temporibus earum odio tempore neque quam cum ex ab aperiam pariatur ad tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aliquid minus vel accusantium accusamus necessitatibus cupiditate fugit recusandae in debitis.<br><br><br> Quam reprehenderit atque eveniet nemo expedita nesciunt doloremque cum quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sequi fugit suscipit eligendi numquam obcaecati officiis unde quidem temporibus repellat quos a, ut, ipsam quo. Deleniti voluptatibus voluptates eius libero.
                 </p>
+            </div>
+            <div id="image-history-enterprise" class="col-md-6 col-12">
+                   
             </div>
         </div>
         <div class="third-content">
@@ -74,7 +91,7 @@
             </h2>
             <hr style="width: 30%;">
             <div class="c-colabs-info row">
-                <div class="c-colab">
+                <div class="c-colab col-md-6 col-12">
                     <i class="material-icons">
                         person
                     </i>
@@ -88,22 +105,6 @@
                     </i>
                     <h4>
                         Danilo Cesar Horta
-                    </h4>
-                </div>
-                <div class="c-colab">
-                    <i class="material-icons">
-                        person
-                    </i>
-                    <h4>
-                        Arthur
-                    </h4>
-                </div>
-                <div class="c-colab">
-                    <i class="material-icons">
-                        person
-                    </i>
-                    <h4>
-                        Arthur
                     </h4>
                 </div>
             </div>
@@ -137,15 +138,15 @@
     </main>
     <footer>
         <div id="c-footer-columns" class="row">
-            <div class="column-footer" id="c-logo-footer">
+            <div class="column-footer col-md-3 col-12 mb-5" id="c-logo-footer">
             </div>
-            <div class="column-footer">
+            <div class="column-footer col-md-3 col-12">
                 <h4>
                     Links de ajuda
                 </h4>
                 <ul>
                     <li>
-                        <a href="home.html">
+                        <a href="index.html">
                             Home
                         </a>
                     </li>
@@ -171,7 +172,7 @@
                     </li>                    
                 </ul>
             </div>
-            <div class="column-footer">
+            <div class="column-footer col-md-3 col-12">
                 <h4>
                     Contato
                 </h4>
@@ -184,7 +185,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="column-footer">
+            <div class="column-footer col-md-3 col-12">
                 <h4>
                     Endereço
                 </h4>

@@ -15,12 +15,12 @@ header a{
     color: #252525;
 }
 main{
-    height: calc( 100% - 60px );
+    height: calc( 100vh - 60px );
     display: flex;
     align-items: center;
 }
 .logo-site-image{
-    background-image: url( "../imgs/logo-titulo.jpeg" );
+    background-image: url( "../../../project-assets/logo-transparent.png" );
     min-height: 150px;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,4 +104,14 @@ main{
     border: solid;
     border-width: 1px;
     border-color: red !important;
+}
+
+@media screen and ( max-width: 768px ){
+    #c-form-login{
+        min-width: 0px;
+    }
+    .form-login-site .input-field-form{
+        margin: 10px;
+        width: calc( 100% - 20px );
+    }
 }

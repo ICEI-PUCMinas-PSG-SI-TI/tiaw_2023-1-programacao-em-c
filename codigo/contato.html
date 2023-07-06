@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <!-- Links -->
     <link rel="stylesheet" href="global-styles/style.css"><!-- Global styles -->
     <link rel="stylesheet" href="header/assets/css/style.css"><!-- Header styles -->
@@ -18,33 +20,45 @@
 <body>
     <header>
         <div id="c-maxwidth-header">
-            <div id="c-header-logo">
-            </div>        
+            <div id="c-header-logo"></div>
+            <span class="material-icons mob-hamburguer">
+                menu
+            </span>
             <nav>
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                    <a href="sobre-nos.html">
-                        Sobre nós
-                    </a>
-                    <a href="contato.html">
-                        Contato
-                    </a>
-                    <a href="cadastro.html">
-                        Cadastro
-                    </a>
-                    <a class="login-btn-nav-header" href="login.html">
-                        Login
-                    </a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="sobre-nos.html">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">
+                            Cadastro
+                        </a>
+                    </li>
+                    <li>
+                        <a class="login-btn-nav-header" href="login.html">
+                            Login
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
         <div id="c-contato">
             <div style="max-width:1300px;margin:auto;align-items: center;height: 100%;" class="row">
-                <div id="c-info-contato">
+                <div id="c-info-contato" class="col-md-8 col-12">
                     <h1>
                         Entre em contato
                     </h1>
@@ -73,7 +87,7 @@
                         </span>
                     </div>  
                 </div>
-                <div id="c-form-contato">
+                <div id="c-form-contato" class="col-md-4 col-12">
                     <form name="form-contato-site">
                         <h1>
                             Contato
@@ -108,15 +122,15 @@
     </main>
     <footer>
         <div id="c-footer-columns" class="row">
-            <div class="column-footer" id="c-logo-footer">
+            <div class="column-footer mb-5 col-md-3 col-12" id="c-logo-footer">
             </div>
-            <div class="column-footer">
+            <div class="column-footer col-md-3 col-12">
                 <h4>
                     Links de ajuda
                 </h4>
                 <ul>
                     <li>
-                        <a href="home.html">
+                        <a href="index.html">
                             Home
                         </a>
                     </li>
@@ -142,7 +156,7 @@
                     </li>                    
                 </ul>
             </div>
-            <div class="column-footer">
+            <div class="column-footer col-md-3 col-12">
                 <h4>
                     Contato
                 </h4>
@@ -155,7 +169,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="column-footer">
+            <div class="column-footer col-md-3 col-12">
                 <h4>
                     Endereço
                 </h4>
